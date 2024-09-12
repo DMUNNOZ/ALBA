@@ -3,7 +3,7 @@
 ## Devices view
 ![csp1](utils/VIEWS/CSP1.png)
 
-## create configuration view
+## Create configuration view
 ![csp2](utils/VIEWS/CSP2.png)
 
 ![csp3](utils/VIEWS/CSP3.png)
