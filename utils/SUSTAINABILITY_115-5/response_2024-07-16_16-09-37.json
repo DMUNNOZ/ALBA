@@ -1,0 +1,88 @@
+{
+    "properties": {
+        "sustainability": 6.35
+    },
+    "devices": [
+        {
+            "model": "Philips Hue Motion Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Philips Hue"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Fibaro Flood Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Fibaro Home Center"
+            ],
+            "connectivity": [
+                "Z-Wave"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Elgato Eve Room",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Eve"
+            ],
+            "connectivity": [
+                "Bluetooth"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Ring Alarm Pro",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Amazon Alexa",
+                "Ring"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "SimpliSafe 9",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "SimpliSafe"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        }
+    ]
+}

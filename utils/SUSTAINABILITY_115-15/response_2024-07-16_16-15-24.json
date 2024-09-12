@@ -1,0 +1,249 @@
+{
+    "properties": {
+        "sustainability": 4.816666666666666
+    },
+    "devices": [
+        {
+            "model": "Fibaro Flood Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Fibaro Home Center"
+            ],
+            "connectivity": [
+                "Z-Wave"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Elgato Eve Room",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Eve"
+            ],
+            "connectivity": [
+                "Bluetooth"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Ecobee SmartSensor",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Ecobee"
+            ],
+            "connectivity": [],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Netatmo Smart Indoor Air Quality Monitor",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Apple HomeKit",
+                "Netatmo"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Bosch Smart Home Motion Detector",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Bosch Smart Home"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 8.75
+        },
+        {
+            "model": "TP-Link Smart LED",
+            "type": "Smart Bulb",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Kasa Smart"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Wyze Bulb Color",
+            "type": "Smart Bulb",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Wyze"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Cisco ISR 4331",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Netgear Nighthawk X10",
+            "type": "Router",
+            "security": {
+                "impact": 8.143729903536977,
+                "cwe_set": [
+                    "CWE-345",
+                    "CWE-78",
+                    "CWE-79"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Asus RT-AC88U",
+            "type": "Router",
+            "security": {
+                "impact": 8.890909090909092,
+                "cwe_set": [
+                    "CWE-78",
+                    "CWE-119"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "TP-Link Archer C5400",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Samsung QLED Q80T",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings",
+                "Google Home",
+                "Amazon Alexa"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "LG OLED CX",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "LG SmartThinQ"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Sony Bravia X900H",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Amazon Fire HD 10",
+            "type": "Tablet",
+            "security": {
+                "impact": 7.5,
+                "cwe_set": [
+                    "CWE-88"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        }
+    ]
+}

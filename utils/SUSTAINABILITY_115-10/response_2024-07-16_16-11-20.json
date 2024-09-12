@@ -1,0 +1,169 @@
+{
+    "properties": {
+        "sustainability": 7.225
+    },
+    "devices": [
+        {
+            "model": "Elgato Eve Room",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Eve"
+            ],
+            "connectivity": [
+                "Bluetooth"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Honeywell Home T9",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Honeywell Home"
+            ],
+            "connectivity": [],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Ecobee SmartSensor",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Ecobee"
+            ],
+            "connectivity": [],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Netatmo Smart Indoor Air Quality Monitor",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Apple HomeKit",
+                "Netatmo"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Bosch Smart Home Motion Detector",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Bosch Smart Home"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Garmin Forerunner 945",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Fitbit Sense",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Fossil Gen 5",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Abode iota All-in-One Security Kit",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 9.37887634260534,
+                "cwe_set": [
+                    "CWE-284",
+                    "CWE-415",
+                    "CWE-798",
+                    "CWE-294",
+                    "CWE-78",
+                    "CWE-190",
+                    "CWE-121",
+                    "CWE-134",
+                    "CWE-489"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "IFTTT",
+                "Abode"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Ring Alarm Security Kit",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Amazon Alexa",
+                "IFTTT",
+                "Ring"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        }
+    ]
+}

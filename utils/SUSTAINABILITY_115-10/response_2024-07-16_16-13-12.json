@@ -1,0 +1,168 @@
+{
+    "properties": {
+        "sustainability": 4.2
+    },
+    "devices": [
+        {
+            "model": "Linksys SE3008",
+            "type": "Bridge",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "D-Link DAP-1610",
+            "type": "Bridge",
+            "security": {
+                "impact": 9.8,
+                "cwe_set": [
+                    "CWE-20"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "TP-Link RE450",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Netgear EX6120",
+            "type": "Repeater",
+            "security": {
+                "impact": 7.519558884727419,
+                "cwe_set": [
+                    "CWE-327",
+                    "CWE-79",
+                    "CWE-352",
+                    "CWE-787",
+                    "CWE-77",
+                    "CWE-120",
+                    "CWE-287",
+                    "CWE-200"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Linksys RE7000",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "D-Link DAP-1650",
+            "type": "Repeater",
+            "security": {
+                "impact": 9.8,
+                "cwe_set": [
+                    "CWE-77",
+                    "CWE-78",
+                    "CWE-425"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Asus RP-AC68U",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Lenovo Tab P11 Pro",
+            "type": "Tablet",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Amazon Fire HD 10",
+            "type": "Tablet",
+            "security": {
+                "impact": 7.5,
+                "cwe_set": [
+                    "CWE-88"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Ultraloq U-Bolt Pro",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Ultraloq"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 6.75
+        }
+    ]
+}

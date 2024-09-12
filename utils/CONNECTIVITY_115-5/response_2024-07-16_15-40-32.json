@@ -1,0 +1,84 @@
+{
+    "properties": {
+        "connectivity": [
+            "Wi-Fi",
+            "Ethernet"
+        ]
+    },
+    "devices": [
+        {
+            "model": "EnGenius ENS202EXT",
+            "type": "Bridge",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Linksys SE3008",
+            "type": "Bridge",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "D-Link DAP-1610",
+            "type": "Bridge",
+            "security": {
+                "impact": 9.8,
+                "cwe_set": [
+                    "CWE-20"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Forcepoint NGFW 1101",
+            "type": "Firewall",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Wyze Bulb Color",
+            "type": "Smart Bulb",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Wyze"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        }
+    ]
+}

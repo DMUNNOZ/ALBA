@@ -1,0 +1,74 @@
+{
+    "properties": {
+        "usability": []
+    },
+    "devices": [
+        {
+            "model": "TP-Link RE450",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Linksys RE7000",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Synology DiskStation DS220",
+            "type": "Network Attached Storage (NAS)",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "QNAP TS-251D",
+            "type": "Network Attached Storage (NAS)",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Asustor AS5202T",
+            "type": "Network Attached Storage (NAS)",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        }
+    ]
+}

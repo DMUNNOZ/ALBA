@@ -1,0 +1,563 @@
+{
+    "properties": {
+        "sustainability": 5.121428571428571
+    },
+    "devices": [
+        {
+            "model": "Netgear EX6120",
+            "type": "Repeater",
+            "security": {
+                "impact": 7.519558884727419,
+                "cwe_set": [
+                    "CWE-327",
+                    "CWE-120",
+                    "CWE-200",
+                    "CWE-77",
+                    "CWE-352",
+                    "CWE-787",
+                    "CWE-79",
+                    "CWE-287"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Linksys RE7000",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "D-Link DAP-1650",
+            "type": "Repeater",
+            "security": {
+                "impact": 9.8,
+                "cwe_set": [
+                    "CWE-77",
+                    "CWE-425",
+                    "CWE-78"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Asus RP-AC68U",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Cisco Meraki MX68",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Ubiquiti UniFi Security Gateway",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Honeywell Home T9",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Honeywell Home"
+            ],
+            "connectivity": [],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Ecobee SmartSensor",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Ecobee"
+            ],
+            "connectivity": [],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Netatmo Smart Indoor Air Quality Monitor",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Apple HomeKit",
+                "Netatmo"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Bosch Smart Home Motion Detector",
+            "type": "High-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Bosch Smart Home"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Cisco ISR 4331",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Netgear Nighthawk X10",
+            "type": "Router",
+            "security": {
+                "impact": 8.143729903536977,
+                "cwe_set": [
+                    "CWE-79",
+                    "CWE-78",
+                    "CWE-345"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Asus RT-AC88U",
+            "type": "Router",
+            "security": {
+                "impact": 8.890909090909092,
+                "cwe_set": [
+                    "CWE-78",
+                    "CWE-119"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "TP-Link Archer C5400",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "SimpliSafe 9",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "SimpliSafe"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "GE Profile Smart Oven",
+            "type": "Smart Appliance",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "GE Appliances Kitchen"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Bosch 800 Series Dishwasher",
+            "type": "Smart Appliance",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Home Connect"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Apple iPad Pro",
+            "type": "Tablet",
+            "security": {
+                "impact": 8.133907284768208,
+                "cwe_set": [
+                    "CWE-502",
+                    "CWE-120",
+                    "CWE-843",
+                    "CWE-416",
+                    "CWE-264",
+                    "CWE-20",
+                    "CWE-190",
+                    "CWE-787",
+                    "CWE-125",
+                    "CWE-399",
+                    "CWE-79",
+                    "CWE-119"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G",
+                "5G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Samsung Galaxy Tab S8",
+            "type": "Tablet",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Microsoft Surface Pro 8",
+            "type": "Tablet",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Lenovo Tab P11 Pro",
+            "type": "Tablet",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Amazon Fire HD 10",
+            "type": "Tablet",
+            "security": {
+                "impact": 7.5,
+                "cwe_set": [
+                    "CWE-88"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Samsung Galaxy Watch 4",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Garmin Forerunner 945",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Fitbit Sense",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Fossil Gen 5",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Amazon Echo Dot",
+            "type": "Home Assistant Hub",
+            "security": {
+                "impact": 8.51847133757962,
+                "cwe_set": [
+                    "CWE-78"
+                ]
+            },
+            "usability": [
+                "Amazon Alexa"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Google Nest Mini",
+            "type": "Home Assistant Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Apple HomePod",
+            "type": "Home Assistant Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Apple HomeKit"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "August Wi-Fi Smart Lock",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "August Home"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Schlage Encode Smart WiFi Deadbolt",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Schlage Home"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Yale Assure Lock",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Yale Access"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Kwikset Halo Touch",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Kwikset"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Ultraloq U-Bolt Pro",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Ultraloq"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Synology DiskStation DS220",
+            "type": "Network Attached Storage (NAS)",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        }
+    ]
+}

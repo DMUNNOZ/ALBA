@@ -1,0 +1,98 @@
+{
+    "properties": {
+        "security": {
+            "impact": 0.0,
+            "cwe_set": []
+        },
+        "usability": [
+            "SmartThings",
+            "Google Home"
+        ],
+        "connectivity": [
+            "ZigBee",
+            "Ethernet",
+            "Wi-Fi"
+        ],
+        "sustainability": 3.75
+    },
+    "devices": [
+        {
+            "model": "Samsung SmartThings Motion Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "TP-Link Archer C5400",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Linksys WRT3200ACM",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Smappee Infinity",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Smappee"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Neurio Home Energy Monitor",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "IFTTT",
+                "Neurio"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        }
+    ]
+}

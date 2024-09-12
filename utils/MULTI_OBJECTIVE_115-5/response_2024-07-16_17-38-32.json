@@ -1,0 +1,126 @@
+{
+    "properties": {
+        "usability": [
+            "Google Home",
+            "Amazon Alexa",
+            "ADT Control"
+        ],
+        "connectivity": [
+            "Z-Wave",
+            "ZigBee",
+            "Bluetooth",
+            "Wi-Fi"
+        ],
+        "sustainability": 2.0
+    },
+    "devices": [
+        {
+            "model": "Ring Alarm Pro",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Amazon Alexa",
+                "Ring"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "SimpliSafe 9",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "SimpliSafe"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "ADT Command",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 8.633984374999999,
+                "cwe_set": [
+                    "CWE-94",
+                    "CWE-269",
+                    "CWE-22",
+                    "CWE-78",
+                    "CWE-89",
+                    "CWE-77"
+                ]
+            },
+            "usability": [
+                "ADT Control"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Z-Wave"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Abode Iota",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 9.37887634260534,
+                "cwe_set": [
+                    "CWE-489",
+                    "CWE-284",
+                    "CWE-78",
+                    "CWE-294",
+                    "CWE-121",
+                    "CWE-190",
+                    "CWE-415",
+                    "CWE-134",
+                    "CWE-798"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Abode"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Nest Secure",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 5.871428571428571,
+                "cwe_set": [
+                    "CWE-201",
+                    "CWE-200"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Nest"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        }
+    ]
+}

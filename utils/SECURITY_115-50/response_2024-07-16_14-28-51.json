@@ -1,0 +1,887 @@
+{
+    "properties": {
+        "security": {
+            "impact": 1.8793535357869589,
+            "cwe_set": [
+                "CWE-787",
+                "CWE-400",
+                "CWE-79",
+                "CWE-284",
+                "CWE-121",
+                "CWE-287",
+                "CWE-521",
+                "CWE-434",
+                "CWE-59",
+                "CWE-120",
+                "CWE-307",
+                "CWE-134",
+                "CWE-125",
+                "CWE-200",
+                "CWE-399",
+                "CWE-119",
+                "CWE-476",
+                "CWE-20",
+                "CWE-362",
+                "CWE-264",
+                "CWE-190",
+                "CWE-78",
+                "CWE-346",
+                "CWE-310",
+                "CWE-798",
+                "CWE-77",
+                "CWE-415",
+                "CWE-352",
+                "CWE-327",
+                "CWE-16",
+                "CWE-255",
+                "CWE-392",
+                "CWE-754",
+                "CWE-345",
+                "CWE-294",
+                "CWE-489",
+                "CWE-201",
+                "CWE-770"
+            ]
+        }
+    },
+    "devices": [
+        {
+            "model": "Linksys WRT54G",
+            "type": "Modern",
+            "security": {
+                "impact": 7.305802526906877,
+                "cwe_set": [
+                    "CWE-287",
+                    "CWE-78",
+                    "CWE-120",
+                    "CWE-77",
+                    "CWE-787",
+                    "CWE-20",
+                    "CWE-119",
+                    "CWE-352",
+                    "CWE-16",
+                    "CWE-476",
+                    "CWE-264",
+                    "CWE-310",
+                    "CWE-200"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Netgear WGR614",
+            "type": "Modern",
+            "security": {
+                "impact": 7.256501182033097,
+                "cwe_set": [
+                    "CWE-20",
+                    "CWE-287",
+                    "CWE-200",
+                    "CWE-119"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "D-Link DIR-655",
+            "type": "Modern",
+            "security": {
+                "impact": 8.667901234567903,
+                "cwe_set": [
+                    "CWE-255",
+                    "CWE-78",
+                    "CWE-79",
+                    "CWE-352"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Belkin F5D7230-4",
+            "type": "Modern",
+            "security": {
+                "impact": 8.228232189973614,
+                "cwe_set": [
+                    "CWE-20",
+                    "CWE-287",
+                    "CWE-399",
+                    "CWE-264"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Cisco Valet M10",
+            "type": "Modern",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Cisco Meraki MX68",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Ubiquiti UniFi Security Gateway",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Zyxel USG40",
+            "type": "Gateway",
+            "security": {
+                "impact": 6.1,
+                "cwe_set": [
+                    "CWE-79"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Juniper SRX300",
+            "type": "Gateway",
+            "security": {
+                "impact": 6.796525096525097,
+                "cwe_set": [
+                    "CWE-362",
+                    "CWE-476",
+                    "CWE-392",
+                    "CWE-754"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Peplink Balance 20",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Aqara Water Leak Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Aqara Home"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Philips Hue Motion Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Philips Hue"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Fibaro Flood Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Fibaro Home Center"
+            ],
+            "connectivity": [
+                "Z-Wave"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Elgato Eve Room",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Eve"
+            ],
+            "connectivity": [
+                "Bluetooth"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "LIFX Color A19",
+            "type": "Smart Bulb",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Apple HomeKit",
+                "LIFX"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Sengled Smart LED",
+            "type": "Smart Bulb",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Sengled"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Cisco ISR 4331",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Netgear Nighthawk X10",
+            "type": "Router",
+            "security": {
+                "impact": 8.143729903536977,
+                "cwe_set": [
+                    "CWE-78",
+                    "CWE-79",
+                    "CWE-345"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Asus RT-AC88U",
+            "type": "Router",
+            "security": {
+                "impact": 8.890909090909092,
+                "cwe_set": [
+                    "CWE-78",
+                    "CWE-119"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "TP-Link Archer C5400",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Linksys WRT3200ACM",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Arlo Pro 4",
+            "type": "Smart Security IP Camera",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Apple HomeKit",
+                "Arlo"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Ring Stick Up Cam",
+            "type": "Smart Security IP Camera",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Ring"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 8.75
+        },
+        {
+            "model": "Nest Cam IQ",
+            "type": "Smart Security IP Camera",
+            "security": {
+                "impact": 7.54153498871332,
+                "cwe_set": [
+                    "CWE-190",
+                    "CWE-346",
+                    "CWE-125",
+                    "CWE-770",
+                    "CWE-284",
+                    "CWE-327",
+                    "CWE-400",
+                    "CWE-307"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Nest"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Blink Outdoor",
+            "type": "Smart Security IP Camera",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Blink Home Monitor"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Samsung QLED Q80T",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings",
+                "Google Home",
+                "Amazon Alexa"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "LG OLED CX",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "LG SmartThinQ"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Sony Bravia X900H",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Samsung Galaxy Tab S8",
+            "type": "Tablet",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Apple Watch Series 7",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Samsung Galaxy Watch 4",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Google Nest Mini",
+            "type": "Home Assistant Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Apple HomePod",
+            "type": "Home Assistant Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Apple HomeKit"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "JBL Link View",
+            "type": "Home Assistant Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Sense Energy Monitor",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Sense"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Smappee Infinity",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Smappee"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Neurio Home Energy Monitor",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "IFTTT",
+                "Neurio"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Samsung Galaxy S23",
+            "type": "Smartphone",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G",
+                "5G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Apple iPhone 14",
+            "type": "Smartphone",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G",
+                "5G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Google Pixel 7",
+            "type": "Smartphone",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G",
+                "5G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Synology DiskStation DS220",
+            "type": "Network Attached Storage (NAS)",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "QNAP TS-251D",
+            "type": "Network Attached Storage (NAS)",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Western Digital My Cloud EX2",
+            "type": "Network Attached Storage (NAS)",
+            "security": {
+                "impact": 9.157664233576643,
+                "cwe_set": [
+                    "CWE-120",
+                    "CWE-787",
+                    "CWE-521",
+                    "CWE-59",
+                    "CWE-434"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Asustor AS5202T",
+            "type": "Network Attached Storage (NAS)",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "WD My Cloud Home",
+            "type": "Network Attached Storage (NAS)",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Abode iota All-in-One Security Kit",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 9.37887634260534,
+                "cwe_set": [
+                    "CWE-798",
+                    "CWE-78",
+                    "CWE-121",
+                    "CWE-190",
+                    "CWE-294",
+                    "CWE-489",
+                    "CWE-415",
+                    "CWE-284",
+                    "CWE-134"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "IFTTT",
+                "Abode"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Ring Alarm Security Kit",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Amazon Alexa",
+                "IFTTT",
+                "Ring"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "SimpliSafe Home Security",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Apple HomeKit",
+                "SimpliSafe"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Nest Secure System",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 6.5,
+                "cwe_set": [
+                    "CWE-200",
+                    "CWE-201"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Nest"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "ADT Command Panel",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "ADT Control"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        }
+    ]
+}

@@ -1,0 +1,588 @@
+{
+    "properties": {
+        "security": {
+            "impact": 1.4579630097278804,
+            "cwe_set": [
+                "CWE-787",
+                "CWE-79",
+                "CWE-269",
+                "CWE-287",
+                "CWE-120",
+                "CWE-200",
+                "CWE-119",
+                "CWE-476",
+                "CWE-20",
+                "CWE-362",
+                "CWE-78",
+                "CWE-425",
+                "CWE-77",
+                "CWE-617",
+                "CWE-794",
+                "CWE-415",
+                "CWE-352",
+                "CWE-327",
+                "CWE-392",
+                "CWE-754"
+            ]
+        }
+    },
+    "devices": [
+        {
+            "model": "Juniper EX3300",
+            "type": "Switch",
+            "security": {
+                "impact": 7.012621359223301,
+                "cwe_set": [
+                    "CWE-794",
+                    "CWE-20",
+                    "CWE-617",
+                    "CWE-119",
+                    "CWE-476",
+                    "CWE-415",
+                    "CWE-269"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Netgear ProSAFE GS728TP",
+            "type": "Switch",
+            "security": {
+                "impact": 7.8,
+                "cwe_set": [
+                    "CWE-200"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "TP-Link TL-SG105",
+            "type": "Switch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Ubiquiti UniFi 8",
+            "type": "Switch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Ubiquiti M2",
+            "type": "Bridge",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "EnGenius ENS202EXT",
+            "type": "Bridge",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "TP-Link RE450",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Netgear EX6120",
+            "type": "Repeater",
+            "security": {
+                "impact": 7.519558884727419,
+                "cwe_set": [
+                    "CWE-287",
+                    "CWE-77",
+                    "CWE-120",
+                    "CWE-787",
+                    "CWE-352",
+                    "CWE-79",
+                    "CWE-327",
+                    "CWE-200"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Linksys RE7000",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "D-Link DAP-1650",
+            "type": "Repeater",
+            "security": {
+                "impact": 9.8,
+                "cwe_set": [
+                    "CWE-425",
+                    "CWE-78",
+                    "CWE-77"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Asus RP-AC68U",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Cisco Meraki MX68",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Ubiquiti UniFi Security Gateway",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Zyxel USG40",
+            "type": "Gateway",
+            "security": {
+                "impact": 6.1,
+                "cwe_set": [
+                    "CWE-79"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Juniper SRX300",
+            "type": "Gateway",
+            "security": {
+                "impact": 6.796525096525097,
+                "cwe_set": [
+                    "CWE-362",
+                    "CWE-476",
+                    "CWE-392",
+                    "CWE-754"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Peplink Balance 20",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Ring Alarm Pro",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Amazon Alexa",
+                "Ring"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "SimpliSafe 9",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "SimpliSafe"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Samsung QLED Q80T",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings",
+                "Google Home",
+                "Amazon Alexa"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "LG OLED CX",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "LG SmartThinQ"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Sony Bravia X900H",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Vizio P-Series Quantum X",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "TCL 6-Series Roku TV",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Samsung Galaxy Tab S8",
+            "type": "Tablet",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Microsoft Surface Pro 8",
+            "type": "Tablet",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Apple Watch Series 7",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Samsung Galaxy Watch 4",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Garmin Forerunner 945",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Fitbit Sense",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Fossil Gen 5",
+            "type": "Smartwatch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Samsung Galaxy S23",
+            "type": "Smartphone",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G",
+                "5G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Apple iPhone 14",
+            "type": "Smartphone",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G",
+                "5G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Google Pixel 7",
+            "type": "Smartphone",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G",
+                "5G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "OnePlus 10 Pro",
+            "type": "Smartphone",
+            "security": {
+                "impact": 6.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G",
+                "5G"
+            ],
+            "sustainability": 8.0
+        },
+        {
+            "model": "Xiaomi Mi 12",
+            "type": "Smartphone",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "3G",
+                "4G",
+                "5G"
+            ],
+            "sustainability": 8.0
+        }
+    ]
+}

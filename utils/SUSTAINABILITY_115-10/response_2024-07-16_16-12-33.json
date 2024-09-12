@@ -1,0 +1,164 @@
+{
+    "properties": {
+        "sustainability": 6.4
+    },
+    "devices": [
+        {
+            "model": "Samsung SmartThings Motion Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Philips Hue Motion Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Philips Hue"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Fibaro Flood Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Fibaro Home Center"
+            ],
+            "connectivity": [
+                "Z-Wave"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Elgato Eve Room",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Eve"
+            ],
+            "connectivity": [
+                "Bluetooth"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Cisco ISR 4331",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "LG OLED CX",
+            "type": "Smart TV",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "LG SmartThinQ"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Yale Assure Lock",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Yale Access"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Kwikset Halo Touch",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Kwikset"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Ultraloq U-Bolt Pro",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Ultraloq"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Emporia Vue",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Emporia"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        }
+    ]
+}

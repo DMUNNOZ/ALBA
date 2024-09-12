@@ -1,0 +1,91 @@
+{
+    "properties": {
+        "usability": [
+            "Apple HomeKit"
+        ]
+    },
+    "devices": [
+        {
+            "model": "Cisco Catalyst 9200",
+            "type": "Switch",
+            "security": {
+                "impact": 8.089999999999998,
+                "cwe_set": [
+                    "CWE-347",
+                    "CWE-20",
+                    "CWE-388",
+                    "CWE-400"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Juniper EX3300",
+            "type": "Switch",
+            "security": {
+                "impact": 7.012621359223301,
+                "cwe_set": [
+                    "CWE-415",
+                    "CWE-20",
+                    "CWE-476",
+                    "CWE-617",
+                    "CWE-269",
+                    "CWE-119",
+                    "CWE-794"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Netgear ProSAFE GS728TP",
+            "type": "Switch",
+            "security": {
+                "impact": 7.8,
+                "cwe_set": [
+                    "CWE-200"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "TP-Link TL-SG105",
+            "type": "Switch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Apple HomePod",
+            "type": "Home Assistant Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Apple HomeKit"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        }
+    ]
+}

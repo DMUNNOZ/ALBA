@@ -1,0 +1,84 @@
+{
+    "properties": {
+        "usability": [
+            "Amazon Alexa"
+        ]
+    },
+    "devices": [
+        {
+            "model": "TP-Link RE450",
+            "type": "Repeater",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Palo Alto PA-220",
+            "type": "Firewall",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Cisco ISR 4331",
+            "type": "Router",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "GE Profile Smart Oven",
+            "type": "Smart Appliance",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "GE Appliances Kitchen"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Bosch 800 Series Dishwasher",
+            "type": "Smart Appliance",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Home Connect"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        }
+    ]
+}

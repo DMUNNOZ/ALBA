@@ -1,0 +1,100 @@
+{
+    "properties": {
+        "security": {
+            "impact": 0.0,
+            "cwe_set": []
+        },
+        "usability": [
+            "SmartThings",
+            "Philips Hue",
+            "Fibaro Home Center",
+            "Eve"
+        ],
+        "connectivity": [
+            "ZigBee",
+            "Bluetooth",
+            "Z-Wave"
+        ],
+        "sustainability": 7.95
+    },
+    "devices": [
+        {
+            "model": "Samsung SmartThings Motion Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Philips Hue Motion Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Philips Hue"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Fibaro Flood Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Fibaro Home Center"
+            ],
+            "connectivity": [
+                "Z-Wave"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Elgato Eve Room",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Eve"
+            ],
+            "connectivity": [
+                "Bluetooth"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Philips Hue White and Color Ambiance",
+            "type": "Smart Bulb",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Philips Hue",
+                "Apple HomeKit"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 2.75
+        }
+    ]
+}

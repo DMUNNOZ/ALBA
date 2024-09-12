@@ -1,0 +1,316 @@
+{
+    "properties": {
+        "security": {
+            "impact": 2.543618518782385,
+            "cwe_set": [
+                "CWE-79",
+                "CWE-284",
+                "CWE-121",
+                "CWE-134",
+                "CWE-200",
+                "CWE-476",
+                "CWE-362",
+                "CWE-190",
+                "CWE-78",
+                "CWE-798",
+                "CWE-415",
+                "CWE-392",
+                "CWE-754",
+                "CWE-294",
+                "CWE-489",
+                "CWE-201"
+            ]
+        },
+        "usability": [
+            "Google Home",
+            "Amazon Alexa",
+            "ADT Control"
+        ],
+        "connectivity": [
+            "Bluetooth",
+            "Ethernet",
+            "Wi-Fi",
+            "ZigBee",
+            "Z-Wave"
+        ],
+        "sustainability": 2.1
+    },
+    "devices": [
+        {
+            "model": "Cisco Meraki MX68",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Ubiquiti UniFi Security Gateway",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Zyxel USG40",
+            "type": "Gateway",
+            "security": {
+                "impact": 6.1,
+                "cwe_set": [
+                    "CWE-79"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Juniper SRX300",
+            "type": "Gateway",
+            "security": {
+                "impact": 6.796525096525097,
+                "cwe_set": [
+                    "CWE-392",
+                    "CWE-476",
+                    "CWE-362",
+                    "CWE-754"
+                ]
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Peplink Balance 20",
+            "type": "Gateway",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Ring Alarm Pro",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Amazon Alexa",
+                "Ring"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "SimpliSafe 9",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "SimpliSafe"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Abode Iota",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 9.37887634260534,
+                "cwe_set": [
+                    "CWE-489",
+                    "CWE-284",
+                    "CWE-78",
+                    "CWE-294",
+                    "CWE-121",
+                    "CWE-190",
+                    "CWE-415",
+                    "CWE-134",
+                    "CWE-798"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Abode"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Smappee Infinity",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Smappee"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Emporia Vue",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Emporia"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Abode iota All-in-One Security Kit",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 9.37887634260534,
+                "cwe_set": [
+                    "CWE-489",
+                    "CWE-284",
+                    "CWE-78",
+                    "CWE-294",
+                    "CWE-121",
+                    "CWE-190",
+                    "CWE-415",
+                    "CWE-134",
+                    "CWE-798"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "IFTTT",
+                "Abode"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Ring Alarm Security Kit",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Amazon Alexa",
+                "IFTTT",
+                "Ring"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "SimpliSafe Home Security",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Apple HomeKit",
+                "SimpliSafe"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Nest Secure System",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 6.5,
+                "cwe_set": [
+                    "CWE-201",
+                    "CWE-200"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Nest"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "ADT Command Panel",
+            "type": "Smart Security Hub",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "ADT Control"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.0
+        }
+    ]
+}

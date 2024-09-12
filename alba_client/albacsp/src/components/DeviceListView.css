@@ -1,0 +1,87 @@
+.device-list-view {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter-container label {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.filter-container select {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.device-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.device-card {
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.device-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.device-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.device-field {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.device-field strong {
+  color: #555;
+  width: 200px;
+  text-align: left;
+}
+
+.device-field span {
+  color: #666;
+  margin-left: 10px;
+}

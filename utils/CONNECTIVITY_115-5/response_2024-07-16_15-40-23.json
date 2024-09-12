@@ -1,0 +1,114 @@
+{
+    "properties": {
+        "connectivity": [
+            "Bluetooth",
+            "Z-Wave",
+            "Wi-Fi",
+            "Ethernet",
+            "ZigBee"
+        ]
+    },
+    "devices": [
+        {
+            "model": "Wyze Bulb Color",
+            "type": "Smart Bulb",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Wyze"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Ring Alarm Pro",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Amazon Alexa",
+                "Ring"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Abode Iota",
+            "type": "Smart Security Alarm",
+            "security": {
+                "impact": 9.37887634260534,
+                "cwe_set": [
+                    "CWE-284",
+                    "CWE-415",
+                    "CWE-798",
+                    "CWE-294",
+                    "CWE-78",
+                    "CWE-190",
+                    "CWE-121",
+                    "CWE-134",
+                    "CWE-489"
+                ]
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Abode"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Bluetooth",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.0
+        },
+        {
+            "model": "Smappee Infinity",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Smappee"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "CURB Energy Monitoring System",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings",
+                "IFTTT",
+                "CURB"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 2.75
+        }
+    ]
+}

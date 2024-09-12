@@ -1,0 +1,354 @@
+
+
+
+
+
+
+
+
+
+Switch ------------------------------------------------------------ 0
+Router ------------------------------------------------------------ 12
+Bridge ------------------------------------------------------------ 0
+Repeater ---------------------------------------------------------- 0
+Modern ------------------------------------------------------------ 0
+Gateway ----------------------------------------------------------- 0
+Firewall ---------------------------------------------------------- 0
+Low-End Sensor ---------------------------------------------------- 0
+High-End Sensor --------------------------------------------------- 0
+Smart Bulb -------------------------------------------------------- 2
+Smart Energy Management Device ------------------------------------ 2
+Smart Lock -------------------------------------------------------- 2
+Smart Security Alarm ---------------------------------------------- 1
+Smart Security IP Camera ------------------------------------------ 6
+Smart Appliance --------------------------------------------------- 2
+Smart TV ---------------------------------------------------------- 4
+Smartphone -------------------------------------------------------- 12
+Tablet ------------------------------------------------------------ 4
+Personal Computer ------------------------------------------------- 5
+Smartwatch -------------------------------------------------------- 3
+Smart Security Hub ------------------------------------------------ 0
+Home Assistant Hub ------------------------------------------------ 3
+Network Attached Storage (NAS) ------------------------------------ 2
+---------------------------------------------------------------------------
+                                                                   60
+
+
+
+Switch (20) Class 2
+
+
+    Extreme Networks Summit X460-G2 - Advanced enterprise switch.
+    Dell N1524 - 24-port gigabit Ethernet switch.
+    Fortinet FortiSwitch 148E - Secure access switch.
+    Brocade ICX 7250 - Stackable Ethernet switch.
+    HPE OfficeConnect 1820-24G - Smart managed gigabit switch.
+    
+    Huawei S5720-52X-SI-AC - 52-port gigabit Ethernet switch.
+    Trendnet TEG-S24DG - 24-port unmanaged gigabit GREENnet switch.
+    Avaya ERS 3500 - Compact Ethernet routing switch.
+    Mellanox SX1410 - High-performance switch.
+    Allied Telesis AT-GS950/48 - Managed gigabit Ethernet switch.
+    
+    
+    
+Router (8 más) Unconstrained
+
+
+    
+    
+    Synology RT2600ac
+    Ubiquiti AmpliFi HD
+    Asus RT-AC86U
+    Netgear Nighthawk X6S
+    TP-Link Deco X20
+    Asus ZenWiFi AX (XT8)
+    Netgear Nighthawk R7000
+
+
+Bridge (20) Class 2
+
+  
+    
+    Cisco WET200 Wireless-G Business Ethernet Bridge
+    Amped Wireless SR20000G High Power Wireless-N 600mW Gigabit Dual Band Range Extender (Bridge mode)
+    Buffalo Airstation N600 Wireless Bridge
+    D-Link DAP-1650 Wireless AC1200 Dual Band Gigabit Range Extender (Bridge mode)
+    Ubiquiti AirGrid M5 HP High Power Wireless-N Bridge
+    Asus EA-AC87 Media Bridge/Access Point
+    TP-Link TL-WA801N Wireless N300 Access Point (Bridge mode)
+    Netgear EX6150 AC1200 WiFi Range Extender (Bridge mode)
+
+Repeater (20)  Class 2
+    
+    
+    Motorola MX1200 - WiFi range extender.
+    Actiontec PWR500 - Powerline network adapter.
+    Securifi Almond 3 - Mesh WiFi system.
+    Netgear EX2700 - WiFi range extender.
+    Devolo WiFi Repeater AC - WiFi range extender.
+    
+Modern (20) Unconstrained
+
+
+    TRENDnet TEW-432BRP
+    Motorola SBG900
+    USRobotics Wireless MAXg Router USR5461
+    Linksys BEFW11S4
+    Netgear DG834G
+    
+    
+    D-Link DI-524
+    Belkin N1 Vision
+    Westell VersaLink 327W
+Gateway (20) Unconstrained
+
+    MikroTik hEX RB750Gr3 - 5-port Ethernet gigabit router.
+    Sophos XG 85 - Network security appliance.
+    WatchGuard Firebox T15 - Network security appliance.
+    Barracuda F280 - NextGen firewall.
+    SonicWall TZ350 - Network security appliance.
+    Huawei AR1220 - Enterprise router.
+    Dell SonicWALL SOHO - Firewall.
+    OpenWRT Gateworks Ventana - Router board.
+    
+Firewall (20)  Unconstrained
+
+    Barracuda F80 - NextGen firewall.
+    
+    Netgate SG-3100 - Security gateway appliance.
+    
+    Huawei USG6300 - Enterprise security gateway.
+    Meraki MX64 - Cloud-managed security appliance.
+    Untangle NG Firewall - Network security appliance.
+    Zyxel ZyWALL 110 - VPN firewall.
+    Smoothwall S10 - Network security appliance.
+    
+    
+    McAfee Firewall Enterprise - Security appliance.
+    Sophos SG 125 - Network security appliance.
+    Stormshield SN310 - Network security appliance.
+    Clavister E80 - Network security appliance.
+    
+    
+Low-End Sensor (20)  Class 1
+    Ecobee Room Sensor - Temperature and occupancy sensor.
+    Honeywell Lyric W1 - WiFi water leak detector. Plug
+    Netatmo Weather Station - Indoor and outdoor weather monitor.
+    D-Link DCH-S161 - WiFi water sensor.
+    Aeotec TriSensor - Motion, temperature, and light sensor.
+
+
+
+
+    Roost Smart Water Leak and Freeze Detector - Water leak detector.
+    WallyHome Water Leak Sensor - Water leak detector.
+    FIBARO CO Sensor - Carbon monoxide detector.
+High-End Sensor (20) Class 2
+
+    Sense Energy Monitor - Home energy monitor.
+    Minut Smart Home Sensor - Multifunction sensor.
+    Resideo Wi-Fi Water Leak & Freeze Detector - Water leak detector.
+    Birdi Smoke Detector - Smart smoke detector.
+    iSmartAlarm Contact Sensor - Door/window sensor.
+    
+    Birdi Smoke Detector - Smart smoke detector.
+    Xfinity Home Door/Window Sensor - Door/window sensor.
+    SmartThings Multipurpose Sensor - Multi-sensor.
+    Eve Motion - Motion sensor.
+    Minut Smart Home Sensor - Multifunction sensor.
+    
+    Smappee Energy Monitor - Energy monitor.
+Smart Bulb (18 más) Class 2
+    Cree Connected LED - Smart LED bulb.
+    Sylvania Smart+ LED - Smart LED bulb.
+    GE Cync Smart LED - Smart LED bulb.
+    Nanoleaf Essentials A19 - Smart LED bulb.
+    Feit Electric Smart Wi-Fi LED - Smart LED bulb.
+    Yeelight Smart LED Bulb - Smart LED bulb.
+    Govee Smart Wi-Fi LED Bulb - Smart LED bulb.
+    
+    
+    Meross MSL120 - Smart LED bulb.
+   
+    Aigostar SL2
+    Eufy Lumos Smart Bulb - Smart LED bulb.
+    Aigostar Mesh
+    TP-Link Tapo L530E
+
+
+Smart Energy Management Device (18 más) Class 2
+    Sense Energy Monitor - Home energy monitor.
+    Smappee Infinity - Energy management system.
+    Neurio Home Energy Monitor - Energy monitor.
+    CURB Energy Monitoring System - Home energy monitor.
+    Emporia Vue Energy Monitor - Energy monitor.
+    Eyedro Home Energy Monitor - Energy monitor.
+    Aeotec Home Energy Meter - Energy monitor.
+    Shelly EM - Energy monitor.
+    
+    Rainforest Automation EAGLE-200 - Energy monitor.
+    TED Pro Home Energy Monitor - Energy monitor.
+    Samsung SmartThings Energy - Energy monitoring hub.
+    P3 International P4460 - Energy usage monitor.
+    Efergy Elite Classic 3.0 - Energy monitor.
+    
+    
+Smart Lock (18 más) Class 2
+
+    
+    
+    Igloohome Smart Deadbolt 2S - Smart lock with PIN code.
+    
+    Samsung SHP-A30 - Smart digital door lock.
+    Brisant Secure Ultion Smart Lock - Smart lock with built-in alarm.
+    Friday Home Smart Lock - Compact smart lock.
+    SimpliSafe Smart Lock - Smart lock for SimpliSafe system.
+    Gate Labs All-In-One Video Smart Lock - Smart lock with camera.
+    
+    Array by Hampton Connected Door Lock - Solar-powered smart lock.
+    
+Smart Security Alarm (19 más)   Class 2
+
+    
+    
+    Xfinity Home Security - Home security by Xfinity.
+    Fortress Security S03 - DIY home security system.
+    Kangaroo Home Security System - Affordable home security.
+    Ooma Smart Security - DIY security system.
+    Samsung SmartThings ADT Home Security - Smart home security system.
+    
+    
+    
+Smart Security IP Camera (14 más)  Class 2
+
+    
+    
+    TP-Link Kasa Spot Pan Tilt - Smart Wi-Fi camera.
+    Canary Flex HD- Indoor/outdoor security camera.
+    Netatmo Smart Indoor Camera - Security camera with face recognition.
+    Ezviz C6CN - Pan/Tilt WiFi camera. 
+    SONOFF Slim Cam
+    
+Smart Appliance (18 más)   Class 2
+
+    Frigidaire Gallery Smart Range - Smart electric range.
+    Sharp SuperSteam Smart Oven - Smart steam oven.
+    Panasonic Countertop Microwave with Inverter Technology - Smart microwave.
+    
+    Haier Smart Wine Cooler - Wi-Fi connected wine cooler.
+    Beko Connected Refrigerator - Smart refrigerator.
+    Hisense Smart Dehumidifier - Smart dehumidifier with Wi-Fi.
+    Hoover Smart Washing Machine - Wi-Fi enabled washing machine.
+    Hotpoint Smart Dishwasher - Smart dishwasher.
+    
+Smart TV (16 más)   Unconstrained
+
+    Sceptre Android TV - 4K UHD TV.
+    Element 4K UHD Smart TV - 4K Smart TV.
+    Skyworth Q20300 - 4K UHD TV.
+    Grundig Vision 7 - 4K UHD TV.
+    
+    
+    
+Smartphone (8 más)  Unconstrained
+    Oppo Find X5 - Premium Android smartphone.
+    Sony Xperia 1 IV - High-end Android phone.
+    Nokia 9.3 PureView - Flagship Android smartphone.
+    
+
+
+
+	OnePlus 10 Pro
+
+	Oppo Find X5 Pro
+        iPhone 15
+	Sony Xperia 1 IV
+	Motorola Edge 30 Ultra
+    
+    
+Tablet (16 más)   Unconstrained
+
+    
+    Lenovo Yoga Smart Tab - Android tablet.
+    
+    Xiaomi Pad 5 - Android tablet.
+    Alcatel 3T 10 - Affordable Android tablet.
+    LG G Pad 5 - Android tablet.
+    Chuwi Hi10 X - Windows 2-in-1 tablet.
+
+    
+Personal Computer (15 más)  Unconstrained
+
+    
+    
+    
+    Samsung Galaxy Book Flex - 2-in-1 laptop.
+    Toshiba Dynabook Tecra A50 - Business laptop.
+    Huawei MateBook X Pro - Premium laptop.
+    Google Pixelbook Go - Chromebook.
+    Gigabyte Aero 15 - Gaming laptop.
+    
+    
+Smartwatch (17 más)  Unconstrained
+
+    
+    Polar Vantage V2 - Fitness and sports smartwatch.
+    Tag Heuer Connected - Luxury smartwatch.
+    Montblanc Summit 2 - Luxury smartwatch.
+    Skagen Falster 3 - Stylish smartwatch.
+    Mobvoi TicWatch E2 - Affordable Wear OS smartwatch.
+    Casio Pro Trek Smart - Rugged smartwatch.
+    Diesel On Axial - Fashion smartwatch.
+    
+    
+Smart Security Hub (20)  Unconstrained
+
+    Abode iota All-in-One Security Kit
+    Ring Alarm Security Kit
+    SimpliSafe Home Security System
+    Nest Secure Alarm System
+    ADT Command Security Panel
+    Vivint Smart Home Hub
+    Honeywell Smart Home Security System
+    Scout Alarm Hub
+    Blue by ADT Home Security Hub
+    Brinks Home Security Hub
+    Fortress Security Store S03 WiFi Security System
+    Ooma Smart Security
+    Bosch Smart Home Controller
+    Swann Security System Hub
+    Yale Sync Smart Home Alarm
+    Alder Home Security System
+    Armorax Blackbox Home Security System
+    Xfinity Home Security Hub
+    
+    
+    Frontpoint Security Hub
+    Armorax Blackbox Home Security System
+    
+    
+    
+Home Assistant Hub (17 más)  Unconstrained
+    LG WK7 ThinQ Speaker - Smart speaker with Google Assistant.
+    Sonos Beam - Smart soundbar with Alexa.
+    Bose Home Speaker 500 - Smart speaker with voice assistant.
+    Harman Kardon Citation One - Smart speaker with Google Assistant.
+    Marshall Stanmore II Voice - Smart speaker with voice assistant.
+    Bowers & Wilkins Formation Flex - Wireless smart speaker.
+    Ultimate Ears Megablast - Portable smart speaker.
+    Sony SRS-RA5000 - Smart speaker with 360 Reality Audio.
+    Xiaomi Mi AI Speaker - Smart speaker with voice assistant.
+    Baidu Xiaodu Smart Speaker - Smart speaker with voice assistant.
+    Tencent Dingdang Smart Speaker - Smart speaker with voice assistant.
+    Rokid Pebble - Smart speaker with voice assistant.
+    
+    
+Network Attached Storage (NAS) (18 más) Unconstrained
+
+    Lenovo ThinkSystem SR650
+    D-Link DNS-340L
+    Promise Apollo Cloud 2 Duo
+    Thecus N2810
+    Fujitsu CELVIN NAS Q805
+

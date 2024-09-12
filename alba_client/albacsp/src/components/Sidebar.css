@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.sidebar h2 {
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8em;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #444;
+  color: #e0e0e0;
+}
+
+.sidebar ul li a.active {
+  background-color: #5bc0de;
+  color: #ffffff;
+}
