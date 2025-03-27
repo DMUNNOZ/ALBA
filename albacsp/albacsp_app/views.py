@@ -1318,7 +1318,7 @@ class ConfigView(APIView):
             dev_apps=apps_per_device_vars[dev]
             if dev_apps:
                 model.AddBoolOr(dev_apps).OnlyEnforceIf(device_vars[dev])      ######### VARS
-        norm_app = (1/total_device_sum)  #   x' = (x - xmin)/(xmax-xmin) ->    x' = (x - 0)/(n-0) ->    x' = (1/n)*x
+        norm_app = (1/apps.count())  #   x' = (x - xmin)/(xmax-xmin) ->    x' = (x - 0)/(n-0) ->    x' = (1/n)*x
         factor_app = 1000
         obj_func_app=norm_app * factor_app * sum(app_vars_dict.values())
 
@@ -1335,7 +1335,8 @@ class ConfigView(APIView):
         cwes_per_device = {}
         vulns = Vulnerability.objects.all()
         for device in devices:
-            cwes_ids_var = set()
+            cwes_ids_var = []
+            added_ids = set()
             cwes_ids = set()
             device_vulns = vulns.filter(device=device)
             for dev_vuln in device_vulns:
@@ -1343,8 +1344,9 @@ class ConfigView(APIView):
                 cwes_id = [cwe.identifier for cwe in cwes]
                 for id in cwes_id:
                     if bool(re.search(r'\d', id)):
-                        cwes_ids_var.add(cwe_vars_dict[id])
-                        cwes_ids.add(id)
+                        if id not in added_ids:
+                            cwes_ids_var.append(cwe_vars_dict[id])
+                            added_ids.add(id)
             cwes_per_device_vars[device] = cwes_ids_var
             cwes_per_device[device] = cwes_ids
         for dev in devices:
@@ -1364,8 +1366,6 @@ class ConfigView(APIView):
                      user_sustainability_v * obj_func_sus + 
                      user_usability_v * obj_func_app)
         
-        print(total_obj)
-
         model.Minimize(total_obj)       
         solver = cp_model.CpSolver()
         status = solver.Solve(model)
@@ -1374,13 +1374,10 @@ class ConfigView(APIView):
 
         if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
 
-            vars_to_app_dict = {v: k for k, v in app_vars_dict.items()}
-            vars_to_cwe_dict = {v: k for k, v in cwe_vars_dict.items()}
             total_impact = []
+            vars_to_cwe_dict = {str(v): k for k, v in cwe_vars_dict.items()}
             total_sustainability = []
             total_connectivity = set()
-            total_app = []
-            total_cwe = []
             for device, device_var in device_vars.items():
                 if solver.Value(device_var) == 1:
                     total_impact.append(device.impact)
@@ -1389,13 +1386,15 @@ class ConfigView(APIView):
                     for con in connectivities:
                         total_connectivity.add(con)
 
-            for app_var in app_vars_dict.values():
+            total_app = []
+            for app_name, app_var in app_vars_dict.items():
                 if solver.Value(app_var) == 1:
-                    total_app.append(vars_to_app_dict[app_var])
+                    total_app.append(app_name)
 
+            total_cwe = []
             for cwe_var in cwe_vars_dict.values():
                 if solver.Value(cwe_var) == 1:
-                    total_cwe.append(vars_to_cwe_dict[cwe_var])
+                    total_cwe.append(vars_to_cwe_dict[str(cwe_var)])
 
             properties = {}
             if user_security_v != 0:
