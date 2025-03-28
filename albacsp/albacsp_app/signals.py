@@ -1,64 +1,7 @@
 from django.db.models.signals import m2m_changed, post_save
 from django.dispatch import receiver
 from .models import Home, Device, Vulnerability, CWE, Power
-import json
-import requests
-
-# ------------------------- API -----------------------
-import json
-import requests
-
-def vulns_search(model):
-    model_url = model.replace(" ", "%20")
-    response = requests.get('https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=' + model_url).text
-
-    vulns = []
-    json_object = json.loads(response)
-    json_vulns = json_object["vulnerabilities"]
-    
-    for vul in range(0, len(json_vulns)):
-        try:
-            version = str(json_vulns[vul]['cve']['metrics'])
-            id = str(json_vulns[vul]["cve"]["id"])
-            description = str(json_vulns[vul]["cve"]["descriptions"][0]["value"])
-            if ("cvssMetricV31" in version):
-                version31 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV31'][0]['cvssData']['version'])
-                cvss31 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV31'][0]['cvssData']['baseScore'])
-                severity31 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV31'][0]['cvssData']['baseSeverity'])
-                exploitability31 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV31'][0]['exploitabilityScore'])
-                impact31 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV31'][0]['impactScore'])
-                cwe31 = ",".join([description["value"] for weakness in json_vulns[vul]['cve']['weaknesses'] for description in weakness["description"]])
-                vector31 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV31'][0]['cvssData']['vectorString'])
-
-                vulns.append(id + "___" + description + "___" + severity31 + "___" + version31 + "___" + cvss31 + "___" + exploitability31 + "___" + impact31 + "___" + cwe31 + "___" + vector31)
-
-            elif ("cvssMetricV30" in version):
-                version30 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV30'][0]['cvssData']['version'])
-                cvss30 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV30'][0]['cvssData']['baseScore'])
-                severity30 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV30'][0]['cvssData']['baseSeverity'])
-                exploitability30 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV30'][0]['exploitabilityScore'])
-                impact30 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV30'][0]['impactScore'])
-                cwe30 = ",".join([description["value"] for weakness in json_vulns[vul]['cve']['weaknesses'] for description in weakness["description"]])
-                vector30 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV30'][0]['cvssData']['vectorString'])
-
-                vulns.append(id + "___" + description + "___" + severity30 + "___" + version30 + "___" + cvss30 + "___" + exploitability30 + "___" + impact30 + "___" + cwe30 + "___" + vector30)
-            
-            elif ("cvssMetricV2" in version):
-                version2 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV2'][0]['cvssData']['version'])
-                cvss2 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV2'][0]['cvssData']['baseScore'])
-                severity2 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV2'][0]['baseSeverity'])
-                exploitability2 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV2'][0]['exploitabilityScore'])
-                impact2 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV2'][0]['impactScore'])
-                cwe2 = ",".join([description["value"] for weakness in json_vulns[vul]['cve']['weaknesses'] for description in weakness["description"]])
-                vector2 = str(json_vulns[vul]['cve']['metrics']['cvssMetricV2'][0]['cvssData']['vectorString'])
-
-                vulns.append(id + "___" + description + "___" + severity2 + "___" + version2 + "___" + cvss2 + "___" + exploitability2 + "___" + impact2 + "___" + cwe2 + "___" + vector2)
-        except:
-            continue
-    return vulns
-
-
-# ---------------------------------------------------
+from .utils import vulns_search
 
 @receiver(post_save, sender=Device)
 def scan(sender, instance, created, **kwargs):

@@ -1,6 +1,6 @@
 
 from django.db import models
-
+from django.utils import timezone
 
 class Home(models.Model):
     identifier = models.TextField(blank=False) 
@@ -41,10 +41,11 @@ class Device(models.Model):
     capability = models.TextField(blank=False)
     connectivities = models.ManyToManyField(Connectivity, blank=True)
     impact=models.FloatField(blank=True, null=True)
-    risk=models.FloatField(blank=True, null=True)
     sustainability=models.FloatField(blank=True, null=True)
     apps = models.ManyToManyField(App, blank=True)
     power_supplies = models.ManyToManyField(Power, blank=True)
+    lastUpdate = models.DateTimeField(default=timezone.now)
+    updateFreq = models.BigIntegerField(default=86400) # 1 day
     home = models.ForeignKey(Home, on_delete=models.CASCADE, related_name="devices",blank=True, null=True)
 
     def __str__(self):

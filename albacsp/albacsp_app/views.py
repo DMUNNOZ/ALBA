@@ -1282,18 +1282,14 @@ class ConfigView(APIView):
         for device in devices:
             sustainability_per_device.append((device, int(round(device.sustainability))))
         sustainability_values = [sustainability for _, sustainability in sustainability_per_device]
-        #print('Valores de sostenibilidad:', sustainability_values)
         min_sustainability = min(sustainability_values)
         max_sustainability = max(sustainability_values)
-        #print('Sostenibilidad mínima:', min_sustainability)
-        #print('Sostenibilidad máxima:', max_sustainability)
         sustainability_per_device_norm = []
         diff_sustainability = max_sustainability - min_sustainability
         for device, sustainability in sustainability_per_device:
             normalized_sustainability = (sustainability - min_sustainability) / diff_sustainability
             scaled_sustainability = round(normalized_sustainability * 1000)
             sustainability_per_device_norm.append((device, scaled_sustainability))
-        #print('Sostenibilidades normalizadas y escaladas por dispositivo:\n', sustainability_per_device_norm)
         sustainability_scores = []
         for i, device in enumerate(devices):
             sus_var = model.NewIntVar(0, sum(score[1] for score in sustainability_per_device_norm), f'sustainability_{i}')
@@ -1307,20 +1303,20 @@ class ConfigView(APIView):
         apps = App.objects.all()
         app_vars_dict = {}
         for app in apps:
-            app_var_id = f'app_{app.id}'           
+            app_var_id = f'app_{app.id}'
             app_var = model.NewBoolVar(app_var_id)
-            app_vars_dict[app.name] = app_var        
+            app_vars_dict[app.name] = app_var
         apps_per_device_vars = {}
         for device in devices:
             app_names = [app_vars_dict[app.name] for app in device.apps.all()]
             apps_per_device_vars[device] = app_names
         for dev in devices:
-            dev_apps=apps_per_device_vars[dev]
+            dev_apps = apps_per_device_vars[dev]
             if dev_apps:
-                model.AddBoolOr(dev_apps).OnlyEnforceIf(device_vars[dev])      ######### VARS
-        norm_app = (1/apps.count())  #   x' = (x - xmin)/(xmax-xmin) ->    x' = (x - 0)/(n-0) ->    x' = (1/n)*x
+                model.AddBoolOr(dev_apps).OnlyEnforceIf(device_vars[dev])
+        norm_app = (1 / apps.count())  
         factor_app = 1000
-        obj_func_app=norm_app * factor_app * sum(app_vars_dict.values())
+        obj_func_app = norm_app * factor_app * sum(app_vars_dict.values())
 
         # ---------------------------------------------- CWE ------------------------------------------------
 
@@ -1330,34 +1326,31 @@ class ConfigView(APIView):
             if bool(re.search(r'\d', cwe.identifier)):
                 cwe_var_id = f'cwe_{str(cwe.identifier).split("-")[1]}'
                 cwe_var = model.NewBoolVar(cwe_var_id)
-                cwe_vars_dict[cwe.identifier] = cwe_var        
+                cwe_vars_dict[cwe.identifier] = cwe_var
         cwes_per_device_vars = {}
         cwes_per_device = {}
         vulns = Vulnerability.objects.all()
         for device in devices:
-            cwes_ids_var = []
-            added_ids = set()
-            cwes_ids = set()
+            cwes_ids_var = []  
+            cwes_ids = set()   
             device_vulns = vulns.filter(device=device)
             for dev_vuln in device_vulns:
-                cwes = dev_vuln.cwes.all()
-                cwes_id = [cwe.identifier for cwe in cwes]
+                cwes_qs = dev_vuln.cwes.all()
+                cwes_id = [cwe.identifier for cwe in cwes_qs]
                 for id in cwes_id:
                     if bool(re.search(r'\d', id)):
-                        if id not in added_ids:
-                            cwes_ids_var.append(cwe_vars_dict[id])
-                            added_ids.add(id)
+                        cwes_ids_var.append(cwe_vars_dict[id])
+                        cwes_ids.add(id)
             cwes_per_device_vars[device] = cwes_ids_var
             cwes_per_device[device] = cwes_ids
         for dev in devices:
-            dev_cwes_v=cwes_per_device_vars[dev] 
+            dev_cwes_v = cwes_per_device_vars[dev]
             if dev_cwes_v:
-                model.AddBoolAnd(dev_cwes_v).OnlyEnforceIf(device_vars[dev])    ######### VARS
-        norm_cwe = (1/938)  #   x' = (x - xmin)/(xmax-xmin) ->    x' = (x - 0)/(938-0) ->    x' = (1/938)*x
+                model.AddBoolAnd(dev_cwes_v).OnlyEnforceIf(device_vars[dev])
+        norm_cwe = (1 / 938) 
         factor_cwe = 1000
-        obj_func_cwe=norm_cwe * factor_cwe * sum(cwe_vars_dict.values())
+        obj_func_cwe = norm_cwe * factor_cwe * sum(cwe_vars_dict.values())
 
-        # --------------------------------------------------------------------------------------------
         # --------------------------------------------------------------------------------------------
 
         total_obj = (user_security_v * 0.5 * obj_func_imp +
@@ -1374,10 +1367,13 @@ class ConfigView(APIView):
 
         if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
 
+            vars_to_app_dict = {v.Name(): k for k, v in app_vars_dict.items()}
+            vars_to_cwe_dict = {v.Name(): k for k, v in cwe_vars_dict.items()}
             total_impact = []
-            vars_to_cwe_dict = {str(v): k for k, v in cwe_vars_dict.items()}
             total_sustainability = []
             total_connectivity = set()
+            total_app = []
+            total_cwe = []
             for device, device_var in device_vars.items():
                 if solver.Value(device_var) == 1:
                     total_impact.append(device.impact)
@@ -1386,15 +1382,13 @@ class ConfigView(APIView):
                     for con in connectivities:
                         total_connectivity.add(con)
 
-            total_app = []
-            for app_name, app_var in app_vars_dict.items():
+            for app_var in app_vars_dict.values():
                 if solver.Value(app_var) == 1:
-                    total_app.append(app_name)
+                    total_app.append(vars_to_app_dict[app_var.Name()])
 
-            total_cwe = []
             for cwe_var in cwe_vars_dict.values():
                 if solver.Value(cwe_var) == 1:
-                    total_cwe.append(vars_to_cwe_dict[str(cwe_var)])
+                    total_cwe.append(vars_to_cwe_dict[cwe_var.Name()])
 
             properties = {}
             if user_security_v != 0:
