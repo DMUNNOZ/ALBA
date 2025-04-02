@@ -1,0 +1,424 @@
+model,type,capability,connectivities,apps,power_supplies
+Cisco Catalyst 9200,Switch,Class 2,Ethernet,,Plug
+Juniper EX3300,Switch,Class 2,Ethernet,,Plug
+Netgear ProSAFE GS728TP,Switch,Class 2,Ethernet,,Plug
+TP-Link TL-SG105,Switch,Class 2,Ethernet,,Plug
+Ubiquiti UniFi 8,Switch,Class 2,Ethernet,,Plug
+Ubiquiti M2,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+TP-Link TL-WA850RE,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+EnGenius ENS202EXT,Bridge,Unconstrained,Wi-Fi; Ethernet,,Plug
+Linksys SE3008,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+D-Link DAP-1610,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+TP-Link RE450,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+Netgear EX6120,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+Linksys RE7000,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+D-Link DAP-1650,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+Asus RP-AC68U,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+Linksys WRT54G,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+Netgear WGR614,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+D-Link DIR-655,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+Belkin F5D7230-4,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+Cisco Valet M10,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+Cisco Meraki MX68,Gateway,Unconstrained,Wi-Fi; Ethernet,,Plug
+Ubiquiti UniFi Security Gateway,Gateway,Unconstrained,Wi-Fi; Ethernet,,Plug
+Zyxel USG40,Gateway,Unconstrained,Wi-Fi; Ethernet,,Plug
+Juniper SRX300,Gateway,Unconstrained,Wi-Fi; Ethernet,,Plug
+Peplink Balance 20,Gateway,Unconstrained,Wi-Fi; Ethernet,,Plug
+Palo Alto PA-220,Firewall,Unconstrained,Ethernet,,Plug
+Cisco Firepower 1010,Firewall,Unconstrained,Ethernet,,Plug
+Fortinet FortiGate 60E,Firewall,Unconstrained,Ethernet,,Plug
+SonicWall TZ300,Firewall,Unconstrained,Ethernet,,Plug
+Forcepoint NGFW 1101,Firewall,Unconstrained,Ethernet,,Plug
+Aqara Water Leak Sensor,Low-End Sensor,Class 1,ZigBee,Aqara Home,Battery
+Samsung SmartThings Motion Sensor,Low-End Sensor,Class 1,ZigBee,SmartThings,Battery
+Philips Hue Motion Sensor,Low-End Sensor,Class 1,ZigBee,Philips Hue,Battery
+Fibaro Flood Sensor,Low-End Sensor,Class 1,Z-Wave,Fibaro Home Center,Battery
+Elgato Eve Room,Low-End Sensor,Class 1,Bluetooth,Eve,Battery
+Nest Temperature Sensor,High-End Sensor,Class 2,ZigBee,Nest,Battery
+Honeywell Home T9,High-End Sensor,Class 2,,Honeywell Home,Battery
+Ecobee SmartSensor,High-End Sensor,Class 2,,Ecobee,Battery
+Netatmo Smart Indoor Air Quality Monitor,High-End Sensor,Class 2,Wi-Fi,Google Home; Amazon Alexa; Apple HomeKit; Netatmo,Battery
+Bosch Smart Home Motion Detector,High-End Sensor,Class 2,ZigBee,Bosch Smart Home,Battery
+Philips Hue White and Color Ambiance,Smart Bulb,Class 2,ZigBee,Google Home; Amazon Alexa; Philips Hue; Apple HomeKit,Plug
+LIFX Color A19,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Apple HomeKit; LIFX,Plug
+Sengled Smart LED,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Sengled,Plug
+TP-Link Smart LED,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Kasa Smart,Plug
+Wyze Bulb Color,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Wyze,Plug
+Cisco ISR 4331,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+Netgear Nighthawk X10,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+Asus RT-AC88U,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+TP-Link Archer C5400,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+Linksys WRT3200ACM,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+Ring Alarm Pro,Smart Security Alarm,Unconstrained,Wi-Fi; Bluetooth; Z-Wave; ZigBee; 3G; 4G,Amazon Alexa; Ring,Plug
+SimpliSafe 9,Smart Security Alarm,Unconstrained,Wi-Fi,Google Home; Amazon Alexa; SimpliSafe,Plug
+ADT Command,Smart Security Alarm,Unconstrained,Wi-Fi; Z-Wave,ADT Control,Plug
+Abode Iota,Smart Security Alarm,Unconstrained,Wi-Fi; Bluetooth; Z-Wave; ZigBee,Google Home; Amazon Alexa; Abode,Plug
+Nest Secure,Smart Security Alarm,Unconstrained,Wi-Fi,Google Home; Nest,Plug
+Arlo Pro 4,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Apple HomeKit; Arlo,Battery
+Ring Stick Up Cam,Smart Security IP Camera,Class 2,Wi-Fi,Ring,Battery; Plug
+Nest Cam IQ,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Nest,Plug
+Wyze Cam v3,Smart Security IP Camera,Class 2,Wi-Fi,Wyze,Plug
+Blink Outdoor,Smart Security IP Camera,Class 2,Wi-Fi,Blink Home Monitor,Cell
+LG Smart InstaView Refrigerator,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; LG SmartThinQ,Plug
+Samsung Family Refrigerator,Smart Appliance,Class 2,Wi-Fi,SmartThings; Google Home; Amazon Alexa; Samsung Family,Plug
+Whirlpool Smart Dishwasher,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Whirlpool,Plug
+GE Profile Smart Oven,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; GE Appliances Kitchen,Plug
+Bosch 800 Series Dishwasher,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Home Connect,Plug
+Samsung QLED Q80T,Smart TV,Unconstrained,Wi-Fi; Bluetooth,SmartThings; Google Home; Amazon Alexa,Plug
+LG OLED CX,Smart TV,Unconstrained,Wi-Fi; Bluetooth,Google Home; Amazon Alexa; LG SmartThinQ,Plug
+Sony Bravia X900H,Smart TV,Unconstrained,Wi-Fi; Bluetooth,Google Home; Amazon Alexa,Plug
+Vizio P-Series Quantum X,Smart TV,Unconstrained,Wi-Fi; Bluetooth,Google Home; Amazon Alexa,Plug
+TCL 6-Series Roku TV,Smart TV,Unconstrained,Wi-Fi,Google Home; Amazon Alexa,Plug
+Apple iPad Pro,Tablet,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Samsung Galaxy Tab S8,Tablet,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G,,Battery; Plug
+Microsoft Surface Pro 8,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Lenovo Tab P11 Pro,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Amazon Fire HD 10,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Apple Watch Series 7,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Samsung Galaxy Watch 4,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Garmin Forerunner 945,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Fitbit Sense,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Fossil Gen 5,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Amazon Echo Dot,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth,Amazon Alexa,Plug
+Google Nest Mini,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth,Google Home,Plug
+Apple HomePod,Home Assistant Hub,Unconstrained,Wi-Fi,Apple HomeKit,Plug
+Lenovo Smart Clock,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth,Google Home,Plug
+JBL Link View,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth,Google Home,Plug
+August Wi-Fi Smart Lock,Smart Lock,Class 2,Wi-Fi,August Home,Cell
+Schlage Encode Smart WiFi Deadbolt,Smart Lock,Class 2,Wi-Fi,Schlage Home,Cell
+Yale Assure Lock,Smart Lock,Class 2,Wi-Fi,Yale Access,Cell
+Kwikset Halo Touch,Smart Lock,Class 2,Wi-Fi,Kwikset,Cell
+Ultraloq U-Bolt Pro,Smart Lock,Class 2,Wi-Fi; Bluetooth,Google Home; Amazon Alexa; Ultraloq,Cell
+Sense Energy Monitor,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; Sense,Plug
+Smappee Infinity,Smart Energy Management Device,Class 2,Wi-Fi; Ethernet,Google Home; Amazon Alexa; Smappee,Plug
+Neurio Home Energy Monitor,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; IFTTT; Neurio,Plug
+CURB Energy Monitoring System,Smart Energy Management Device,Class 2,Wi-Fi,SmartThings; IFTTT; CURB,Plug
+Emporia Vue,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; Emporia,Plug
+Samsung Galaxy S23,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Google Pixel 7,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+OnePlus 10 Pro,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Xiaomi Mi 12,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Dell XPS 15,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Apple MacBook Pro,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+HP Spectre x360,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Lenovo ThinkPad X1 Carbon,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Asus ROG Zephyrus G14,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Synology DiskStation DS220,Network Attached Storage (NAS),Unconstrained,Ethernet,,Plug
+QNAP TS-251D,Network Attached Storage (NAS),Unconstrained,Ethernet,,Plug
+Western Digital My Cloud EX2,Network Attached Storage (NAS),Unconstrained,Ethernet,,Plug
+Asustor AS5202T,Network Attached Storage (NAS),Unconstrained,Ethernet,,Plug
+WD My Cloud Home,Network Attached Storage (NAS),Unconstrained,Wi-Fi; Ethernet,,Plug
+Abode iota All-in-One Security Kit,Smart Security Hub,Unconstrained,Wi-Fi; Ethernet,Google Home; Amazon Alexa; IFTTT; Abode,Plug
+Ring Alarm Security Kit,Smart Security Hub,Unconstrained,Wi-Fi,Amazon Alexa; IFTTT; Ring,Plug
+SimpliSafe Home Security,Smart Security Hub,Unconstrained,Wi-Fi,Google Home; Amazon Alexa; Apple HomeKit; SimpliSafe,Plug
+Nest Secure System,Smart Security Hub,Unconstrained,Wi-Fi,Google Home; Nest,Plug
+ADT Command Panel,Smart Security Hub,Unconstrained,Wi-Fi,ADT Control,Plug
+D-Link DGS-1210,Switch,Class 2,Ethernet,,Plug
+HP Aruba 2930F,Switch,Class 2,Ethernet,,Plug
+Linksys LGS116P,Switch,Class 2,Ethernet,,Plug
+Zyxel GS1900,Switch,Class 2,Ethernet,,Plug
+MikroTik CRS328,Switch,Class 2,Ethernet,,Plug
+Huawei AR2200,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+Asus RT-AX88U,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+Netgear Nighthawk AX12,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+TP-Link Archer AX6000,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+Linksys Velop MX10,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+TP-Link TL-WR802N,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+Linksys WET610N,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+D-Link DAP-1522,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+Asus EA-N66,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+Ubiquiti NanoStation M5,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+Tenda A18,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+Ubiquiti AmpliFi,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+Zyxel WRE2206,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+Cisco RE1000,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+EnGenius ERB9250,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+TP-Link TL-WR841N,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+Buffalo AirStation WHR-G54S,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+ZyXEL NBG-418N,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+SMC Barricade SMC7004AWBR,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+ASUS RT-N16,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+TP-Link TL-ER6020,Gateway,Unconstrained,Ethernet,,Plug
+D-Link DSR-250,Gateway,Unconstrained,Ethernet,,Plug
+Peplink Balance 20,Gateway,Unconstrained,Ethernet,,Plug
+Linksys LRT214,Gateway,Unconstrained,Ethernet,,Plug
+HPE MSR1003-8S,Gateway,Unconstrained,Ethernet,,Plug
+Sophos XG 115w,Firewall,Unconstrained,Wi-Fi; Ethernet,,Plug
+SonicWall TZ300,Firewall,Unconstrained,Ethernet,,Plug
+Check Point 3200,Firewall,Unconstrained,Ethernet,,Plug
+Juniper SRX1500,Firewall,Unconstrained,Ethernet,,Plug
+WatchGuard T35-W,Firewall,Unconstrained,Wi-Fi; Ethernet,,Plug
+Wyze Sense,Low-End Sensor,Class 1,ZigBee,IFTTT; Wyze,Battery
+Everspring Flood Sensor,Low-End Sensor,Class 1,Z-Wave,SmartThings; Vera; Home Assistant,Cell
+Dome Home Automation Water Sensor,Low-End Sensor,Class 1,Z-Wave,SmartThings; Vera; Home Assistant,Cell
+Centralite Micro Door Sensor,Low-End Sensor,Class 1,ZigBee,SmartThings; Hubitat Elevation; Wink,Cell
+LeakSmart Sensor,Low-End Sensor,Class 1,ZigBee,SmartThings; Hubitat Elevation; Wink; LeakSmart,Cell
+First Alert Onelink Safe  Sound,High-End Sensor,Class 2,Wi-Fi,Google Home; Amazon Alexa; Apple HomeKit; Onelink Home,Plug
+Foobot Indoor Air Quality Monitor,High-End Sensor,Class 2,Wi-Fi,Google Home; Amazon Alexa; IFTTT; Foobot,Plug
+Awair Element,High-End Sensor,Class 2,Wi-Fi,Google Home; Amazon Alexa; Awair,Plug
+Kidde Carbon Monoxide Detector,High-End Sensor,Class 2,Wi-Fi,SmartThings; Google Home; Amazon Alexa; Wink,Cell
+Airthings Wave Plus,High-End Sensor,Class 2,Bluetooth; ZigBee,Google Home; Amazon Alexa; Airthings,Cell
+Cree Connected LED,Smart Bulb,Class 2,ZigBee,SmartThings; Google Home; Amazon Alexa; Wink,Plug
+GE Cync Smart LED,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Cync,Plug
+Nanoleaf Essentials A19,Smart Bulb,Class 2,Bluetooth,Google Home; Apple HomeKit; Nanoleaf,Plug
+Feit Electric Smart LED,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Feit Electric,Plug
+Yeelight Smart LED Bulb,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Yeelight; Mi Home,Plug
+D-Link DSP-W320,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; MyDlink,Plug
+TP-Link Kasa Strip,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; Kasa Smart,Plug
+Eve Energy Strip,Smart Energy Management Device,Class 2,Bluetooth,Apple HomeKit; Eve,Plug
+Belkin WeMo,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; IFTTT; Apple HomeKit; WeMo,Plug
+Schneider Electric Wiser,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; Wiser Energy; Sense,Plug
+Nest x Yale Lock,Smart Lock,Class 2,Wi-Fi,Google Home; Amazon Alexa; Nest,Cell
+Level Bolt Lock,Smart Lock,Class 2,Bluetooth,Amazon Alexa; Apple HomeKit; Level,Cell
+Lockly Secure Pro,Smart Lock,Class 2,Wi-Fi; Bluetooth,Google Home; Amazon Alexa; Lockly,Cell
+Wyze Lock,Smart Lock,Class 2,Wi-Fi; Bluetooth,Google Home; Amazon Alexa; Wyze,Cell
+Danalock V3,Smart Lock,Class 2,Bluetooth; Z-Wave,Google Home; Amazon Alexa; Danalock,Cell
+Scout Alarm,Smart Security Alarm,Class 2,Wi-Fi; Z-Wave; ZigBee,Google Home; Amazon Alexa; IFTTT; Scout,Cell
+Vivint Security System,Smart Security Alarm,Class 2,Wi-Fi; Z-Wave,Google Home; Amazon Alexa; Vivint,Cell
+Frontpoint Safe Home,Smart Security Alarm,Class 2,Wi-Fi,Google Home; Amazon Alexa; Frontpoint,Cell
+Brinks Home Security,Smart Security Alarm,Class 2,Wi-Fi,Google Home; Amazon Alexa; Brinks,Cell
+Cove Smart Home Security,Smart Security Alarm,Class 2,Wi-Fi,Google Home; Amazon Alexa; Cove,Cell
+Logitech Circle View,Smart Security IP Camera,Class 2,Wi-Fi,Apple HomeKit; Logitech Circle View,Plug
+EufyCam 2,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Apple HomeKit; Eufy Security,Battery
+Reolink Argus 3 Pro,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Reolink,Battery
+Amcrest 4MP,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Amcrest View,Plug
+D-Link DCS-8525LH,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; IFTTT; MyDlink,Plug
+Miele Smart Dishwasher,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Miele,Plug
+Electrolux Smart Washer,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Electrolux,Plug
+LG ThinQ Smart Dryer,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; LG SmartThinQ,Plug
+Samsung FlexWash Washer,Smart Appliance,Class 2,Wi-Fi,SmartThings; Google Home; Amazon Alexa,Plug
+KitchenAid Smart Oven,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; KitchenAid,Plug
+Hisense H8G Quantum,Smart TV,Unconstrained,Wi-Fi; Ethernet,Google Home; Amazon Alexa,Plug
+Philips 4K UHD Android TV,Smart TV,Unconstrained,Wi-Fi; Ethernet,Google Home; Amazon Alexa,Plug
+Panasonic HX800,Smart TV,Unconstrained,Wi-Fi; Ethernet,Google Home; Amazon Alexa,Plug
+Toshiba Fire TV Edition,Smart TV,Unconstrained,Wi-Fi; Ethernet,Google Home; Amazon Alexa,Plug
+Skyworth Q20300,Smart TV,Unconstrained,Wi-Fi; Ethernet,Google Home; Amazon Alexa,Plug
+iPhone 14,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Samsung Galaxy S23,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Google Pixel 7 Pro,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Huawei P50 Pro,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Vivo X80 Pro+,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Huawei MatePad Pro,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Asus ZenPad 3S,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Google Pixel Slate,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Dell Latitude 7220,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Acer Chromebook Tab 10,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Microsoft Surface Laptop 4,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Acer Predator Helios 300,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Razer Blade 15,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+MSI GS66 Stealth,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+LG Gram 17,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Suunto 7,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Huawei Watch GT 3,Smartwatch,Unconstrained,Bluetooth,,Battery
+Amazfit GTS 2,Smartwatch,Unconstrained,Bluetooth,,Battery
+Withings Steel HR,Smartwatch,Unconstrained,Bluetooth,,Battery
+TicWatch Pro 3,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Samsung SmartThings Hub V3,Home Assistant Hub,Unconstrained,Wi-Fi; Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa,Plug
+Amazon Echo Show 10,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth; ZigBee,Amazon Alexa,Plug
+Google Nest Hub Max,Home Assistant Hub,Unconstrained,Wi-Fi,Google Home,Plug
+Apple HomePod Mini,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth,Apple HomeKit,Plug
+Aeotec Smart Home Hub,Home Assistant Hub,Unconstrained,Wi-Fi; Z-Wave,Google Home; Amazon Alexa; Aeotec,Plug
+ADT Pulse,Smart Security Hub,Unconstrained,Wi-Fi; Z-Wave,ADT Control,Plug
+VeraEdge,Smart Security Hub,Unconstrained,Z-Wave,Vera,Plug
+Insteon Hub,Smart Security Hub,Unconstrained,Z-Wave,Insteon,Plug
+Wink Hub 2,Smart Security Hub,Unconstrained,Wi-Fi; Z-Wave; ZigBee,Wink,Plug
+Wink Hub 1,Smart Security Hub,Unconstrained,Wi-Fi; Z-Wave; ZigBee,Wink,Plug
+Buffalo LinkStation 520,Network Attached Storage (NAS),Unconstrained,Ethernet,,Plug
+Netgear ReadyNAS RN422,Network Attached Storage (NAS),Unconstrained,Ethernet,,Plug
+TerraMaster F2-221,Network Attached Storage (NAS),Unconstrained,Ethernet; Dedicated Wiring,,Plug
+Drobo 5N2,Network Attached Storage (NAS),Unconstrained,Ethernet,,Plug
+Zyxel NAS326,Network Attached Storage (NAS),Unconstrained,Ethernet; Dedicated Wiring,,Plug
+Huawei S5720-52X-SI-AC,Switch,Class 2,Ethernet,,Plug
+Trendnet TEG-S24DG,Switch,Class 2,Ethernet,,Plug
+Avaya ERS 3500,Switch,Class 2,Ethernet,,Plug
+Mellanox SX1410,Switch,Class 2,Ethernet,,Plug
+Allied Telesis AT-GS950,Switch,Class 2,Ethernet,,Plug
+Asus ROG Rapture GT-AX11000,Router,Unconstrained,Ethernet,,Plug
+Netgear Orbi RBK50,Router,Unconstrained,Ethernet,,Plug
+TP-Link Archer A7,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+D-Link DIR-3060,Router,Unconstrained,Ethernet,,Plug
+Eero Pro 6,Router,Unconstrained,Ethernet,,Plug
+TP-Link TL-WA901ND,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+Linksys WES610N,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+Netgear WAC104,Bridge,Unconstrained,Wi-Fi; Ethernet,,Plug
+EnGenius ENH202,Bridge,Class 2,Wi-Fi; Ethernet,,Plug
+TP-Link TL-WA801ND,Bridge,Class 2,Wi-Fi,,Plug
+Amped Wireless REC22P,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+Belkin F9K1106,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+Edimax EW-7438AC,Repeater,Class 2,Ethernet,,Plug
+Huawei WS322,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+TRENDnet TEW-800MB,Repeater,Class 2,Wi-Fi; Ethernet,,Plug
+TRENDnet TEW-432BRP,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+Motorola SBG900,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+SRobotics Wireless MAXg Router USR5461,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+Linksys BEFW11S4,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+Netgear DG834G,Modern,Unconstrained,Wi-Fi; Ethernet,,Plug
+Huawei AR1220,Gateway,Unconstrained,Ethernet,,Plug
+Cisco ASR 1001-X,Gateway,Unconstrained,Ethernet,,Plug
+HPE MSR3000,Gateway,Unconstrained,Ethernet,,Plug
+Ubiquiti EdgeRouter Infinity,Gateway,Unconstrained,Ethernet,,Plug
+MikroTik Cloud Core Router CCR1009-7G-1C-1S+,Gateway,Unconstrained,Ethernet,,Plug
+Huawei USG6300,Firewall,Unconstrained,Ethernet,,Plug
+Meraki MX64,Firewall,Unconstrained,Ethernet,,Plug
+Sophos SG 125,Firewall,Unconstrained,Ethernet,,Plug
+Zyxel ZyWALL 110,Firewall,Unconstrained,Ethernet,,Plug
+Smoothwall S10,Firewall,Unconstrained,Ethernet,,Plug
+Ecobee Room Sensor,Low-End Sensor,Class 1,Wi-Fi,Amazon Alexa; Ecobee,Cell
+Honeywell Lyric W1,Low-End Sensor,Class 1,Wi-Fi,Honeywell Home,Plug
+Netatmo Weather Station,Low-End Sensor,Class 1,Wi-Fi,Netatmo,Cell
+D-Link DCH-S161,Low-End Sensor,Class 1,Wi-Fi,MyDlink,Battery
+Aeotec TriSensor,Low-End Sensor,Class 1,Wi-Fi; Z-Wave,Aeotec,Cell
+Birdi Smoke Detector,High-End Sensor,Class 2,Wi-Fi,Birdi,Battery
+Xfinity Home Sensor,High-End Sensor,Class 2,Wi-Fi; ZigBee,Xfinity,Cell
+SmartThings Multipurpose Sensor,High-End Sensor,Class 2,ZigBee,SmartThings,Cell
+Eve Motion,High-End Sensor,Class 2,Bluetooth,Apple HomeKit; Eve,Cell
+Minut Smart Home Sensor,High-End Sensor,Class 2,Wi-Fi,Minut,Cell
+Aigostar Mesh,Smart Bulb,Class 2,Bluetooth,Google Home; Amazon Alexa,Plug
+Eufy Lumos Smart Bulb,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; EufyHome,Plug
+TP-Link Tapo L530E,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Tapo,Plug
+Aigostar G45,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa,Plug
+Aigostar GU10,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa,Plug
+Rainforest Automation EAGLE-200,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; Rainforest Cloud,Plug
+TED Pro Home Energy Monitor,Smart Energy Management Device,Class 2,ZigBee,TED Pro Home; TED Mobile; TED Commander,Plug
+Samsung SmartThings Energy,Smart Energy Management Device,Class 2,Wi-Fi; ZigBee,SmartThings,Plug
+Efergy Elite Classic 3.0,Smart Energy Management Device,Class 2,Wi-Fi; ZigBee,Efergy,Plug
+Aeotec Home Energy Meter,Smart Energy Management Device,Class 2,Z-Wave,SmartThings; Home Assistant; Aeotec,Plug
+Nuki Smart Lock Pro,Smart Lock,Class 2,Wi-Fi; Bluetooth,Google Home; Amazon Alexa; Apple HomeKit; Nuki,Cell
+Samsung SHP-A30,Smart Lock,Class 2,Wi-Fi; ZigBee,SmartThings,Cell
+Friday Home Smart Lock,Smart Lock,Class 2,Wi-Fi; Bluetooth,Friday Home,Cell
+SimpliSafe Smart Lock,Smart Lock,Class 2,Wi-Fi,SimpliSafe,Cell
+Gate Labs All-In-One Video Smart Lock,Smart Lock,Class 2,Wi-Fi,Google Home; Amazon Alexa; Gate Labs,Cell
+Xfinity Home Security,Smart Security Alarm,Class 2,Wi-Fi; ZigBee,Xfinity Home,Plug
+Fortress Security S03,Smart Security Alarm,Class 2,Wi-Fi,Smart Fortress,Plug
+Kangaroo Home Security System,Smart Security Alarm,Class 2,Wi-Fi,Kangaroo: Simple Home Security,Cell
+Ooma Smart Security,Smart Security Alarm,Class 2,Wi-Fi,Ooma Smart Security,Plug
+Samsung SmartThings ADT Home Security,Smart Security Alarm,Class 2,Wi-Fi; ZigBee,SmartThings,Plug
+TP-Link Kasa Spot Pan Tilt,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Kasa Smart,Plug
+Canary Flex HD,Smart Security IP Camera,Class 2,Wi-Fi,Canary,Battery
+Netatmo Smart Indoor Camera,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Apple HomeKit; Netatmo,Plug
+Ezviz C6CN,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Ezviz,Plug
+SONOFF Slim Cam,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; eWeLink,Plug
+Samsung QLED Q80A,Smart TV,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Plug
+LG OLED C1,Smart TV,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Plug
+Sony Bravia XR A90J,Smart TV,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Plug
+TCL R648,Smart TV,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Plug
+Hisense U8G,Smart TV,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Plug
+OnePlus 10 Pro,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Oppo Find X5,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+iPhone 15,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Sony Xperia 1 IV,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Motorola Edge 30 Ultra,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G; 5G,,Battery; Plug
+Xiaomi Pad 5,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Alcatel 3T 10,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+LG G Pad 5,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Chuwi Hi10 X,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Lenovo Yoga Smart Tab,Tablet,Unconstrained,Wi-Fi; Bluetooth,,Battery; Plug
+Samsung Galaxy Book Flex,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Toshiba Dynabook Tecra A50,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Huawei MateBook X,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Gigabyte Aero 15,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+HP OMEN 15,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Battery; Plug
+Apple Watch Series 7,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Garmin Fenix 7X Sapphire,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Amazfit GTR 3,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Amazfit Bip U Pro,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Amazfit T-Rex Pro,Smartwatch,Unconstrained,Wi-Fi; Bluetooth,,Battery
+Yale Sync Smart Home Alarm,Smart Security Hub,Unconstrained,Wi-Fi,Amazon Alexa; Yale Access,Battery; Plug
+Ring Alarm Base Station,Smart Security Hub,Unconstrained,Wi-Fi; Z-Wave,Amazon Alexa; Ring,Battery; Plug
+Ring Alarm Security Kit,Smart Security Hub,Unconstrained,Wi-Fi; Z-Wave,Amazon Alexa; Ring,Battery; Plug
+Alder Home Security System,Smart Security Hub,Unconstrained,Wi-Fi; 3G; 4G,Alder,Battery; Plug
+Blue by ADT Home Security Hub,Smart Security Hub,Unconstrained,Wi-Fi; Bluetooth; Z-Wave,ADT Control,Battery; Plug
+Haier Smart Wine Cooler,Smart Appliance,Class 2,Wi-Fi,Haier Smart Home,Plug
+Beko Connected Refrigerator,Smart Appliance,Class 2,Wi-Fi,IFTTT; Beko HomeWhiz,Plug
+Hisense Smart Dehumidifier,Smart Appliance,Class 2,Wi-Fi,Hisense Smart Home,Plug
+Hoover Smart Washing Machine,Smart Appliance,Class 2,Wi-Fi,Hoover Wizard,Plug
+Hotpoint Smart Dishwasher,Smart Appliance,Class 2,Wi-Fi,Hotpoint HomeNet,Plug
+Hubitat Elevation C-7,Home Assistant Hub,Unconstrained,Wi-Fi; Z-Wave; ZigBee,Hubitat Elevation,Plug
+Google Nest Hub Max,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth,Google Home; Nest,Plug
+Amazon Echo Show 15,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth; ZigBee,Amazon Alexa,Plug
+Xiaomi Smart Home Hub 2,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth; ZigBee,Mi Home,Plug
+Xiaomi Mi Smart Home Hub,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth; ZigBee,Mi Home,Plug
+Lenovo ThinkSystem SR650,Network Attached Storage (NAS),Unconstrained,Ethernet; Dedicated Wiring,,Plug
+D-Link DNS-340L,Network Attached Storage (NAS),Unconstrained,Ethernet; Dedicated Wiring,,Plug
+Promise Apollo Cloud 2 Duo,Network Attached Storage (NAS),Unconstrained,Ethernet; Dedicated Wiring,,Plug
+Thecus N2810,Network Attached Storage (NAS),Unconstrained,Ethernet; Dedicated Wiring,,Plug
+Fujitsu CELVIN NAS Q805,Network Attached Storage (NAS),Unconstrained,Ethernet; Dedicated Wiring,,Plug
+iPhone 7,Smartphone,Unconstrained,Wi-Fi; Bluetooth; 3G; 4G,,Battery; Plug
+Vera Plus,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth; Z-Wave; ZigBee,,Plug
+Cisco Catalyst 3850 24,Switch,Class 2,Ethernet,,Plug
+Asus RT N12,Router,Unconstrained,Wi-Fi; Ethernet,,Plug
+Gigamon G TAP,Switch,Class 2,Ethernet,,Plug
+Raspberry Pi 4,Personal Computer,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Plug
+Netgear GS308,Switch,Class 2,Ethernet,,Plug
+Arlo Base,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth; Z-Wave; ZigBee,Google Home; Amazon Alexa; Apple HomeKit; Arlo,Plug
+Eufy Homebase 2,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth; Z-Wave; ZigBee,Google Home; Amazon Alexa; Eufy Security,Plug
+Phillips Hue Bridge,Bridge,Class 2,Bluetooth; Z-Wave; ZigBee,Google Home; Amazon Alexa; Philips Hue,Plug
+Arlo Ultra 2,Smart Security IP Camera,Class 2,Wi-Fi; Z-Wave; ZigBee,Google Home; Amazon Alexa; Arlo,Battery; Plug
+Eufy Doorbell Camera,Smart Security IP Camera,Class 2,Wi-Fi; Z-Wave; ZigBee,Google Home; Amazon Alexa; Eufy Security,Battery
+Phillips Hue White,Smart Bulb,Class 2,Wi-Fi; Z-Wave; ZigBee,Google Home; Amazon Alexa; Philips Hue,Plug
+SmartThings Bulb,Smart Bulb,Class 2,Wi-Fi; Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa,Plug
+Fibaro Home Center Lite,Home Assistant Hub,Unconstrained,Wi-Fi; Z-Wave,SmartThings; Google Home; Amazon Alexa,Plug
+Ring Base Station,Smart Security Hub,Unconstrained,Wi-Fi; Bluetooth; Z-Wave; Ethernet,Amazon Alexa; IFTTT; Ring,Battery; Plug
+Fibaro Wall Plug,Smart Energy Management Device,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; IFTTT; Fibaro Home Center,Plug
+Fibaro Motion Sensor,High-End Sensor,Class 2,Bluetooth; Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; IFTTT; Fibaro Home Center,Cell
+Fibaro Flood Sensor,High-End Sensor,Class 2,Bluetooth; Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; IFTTT; Fibaro Home Center,Cell; Plug
+Fibaro Door/Window Sensor,High-End Sensor,Class 2,Bluetooth; Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; IFTTT; Fibaro Home Center,Cell
+Ring Keypad,Smart Security Alarm,Class 2,Z-Wave; ZigBee,Amazon Alexa; Ring,Battery; Plug
+Ring Range Extender,Repeater,Class 2,Z-Wave; ZigBee,Ring,Battery; Plug
+Ring Contact Sensor,High-End Sensor,Class 2,Z-Wave; ZigBee,Amazon Alexa; Ring,Cell
+SmartThings Smart Hub,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth; Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; IFTTT,Plug
+Aeotec Water Leak Sensor,High-End Sensor,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Cell
+Aeotec Multipurpose Sensor,High-End Sensor,Class 2,Z-Wave; ZigBee,Aeotec,Cell
+Aeotec Motion Sensor,High-End Sensor,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Cell
+Aeotec Button,High-End Sensor,Class 1,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Cell
+SmartThings Button,High-End Sensor,Class 1,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; IFTTT,Cell
+SmartThings Bulb,Smart Bulb,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; IFTTT,Plug
+Sonoff Smart Plug,Smart Energy Management Device,Class 2,Wi-Fi; Z-Wave; ZigBee,Google Home; Amazon Alexa; IFTTT; eWeLink,Plug
+Sengled Smart Plug,Smart Energy Management Device,Class 2,Wi-Fi; Z-Wave; ZigBee,Google Home; Amazon Alexa; Sengled,Plug
+Aeotec Trisensor,High-End Sensor,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Cell
+Aeotec Nanomode Quad,Smart Appliance,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Cell
+Aeotec Indoor Siren,Smart Security Alarm,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Cell; Plug
+Aeotec Doorbell 6,Smart Lock,Class 2,Wi-Fi; Bluetooth; Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; IFTTT; Aeotec,Plug
+Aeotec Smart Switch 7,Smart Energy Management Device,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Plug
+Aeotec Door/ Window Sensor 7 Pro,High-End Sensor,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Cell
+Aeotec Temperatura and Humidity Sensor,High-End Sensor,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Cell
+Aeotec Water Sensor 6,High-End Sensor,Class 2,Z-Wave; ZigBee,SmartThings; Google Home; Amazon Alexa; Aeotec,Cell
+Amazon Echo Spot,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth,Amazon Alexa,Plug
+Amazon Echo Studio,Home Assistant Hub,Unconstrained,Wi-Fi; Bluetooth,Amazon Alexa,Plug
+HeimVision HM2023,Smart Security IP Camera,Class 2,Wi-Fi,HeimVision,Plug
+Globe Electric Lamp,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Globe,Plug
+Arlo Q,Smart Security IP Camera,Class 2,Wi-Fi,Amazon Alexa; IFTTT; Arlo,Battery; Plug
+Borun Spy Camera,Smart Security IP Camera,Class 2,Wi-Fi,Borun,Battery; Plug
+Dlink Mini Camera,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; MyDlink,Plug
+HomeEye Camera,Smart Security IP Camera,Class 2,Wi-Fi,HomeEye,Plug
+Rbcior Indoor Camera,Smart Security IP Camera,Class 2,Wi-Fi,Amazon Alexa,Plug
+Harman Kardon Allure,Smart Appliance,Unconstrained,Wi-Fi; Bluetooth,Google Home; Amazon Alexa; Harman Kardon,Plug
+Sonos One,Smart Appliance,Unconstrained,Wi-Fi; Ethernet,Google Home; Amazon Alexa; Sonos,Plug
+Yi Outdoor Camera,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Yi,Plug
+Amcrest 2K Camera,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Amcrest View,Plug
+Luohe Hidden Camera,Smart Security IP Camera,Class 2,Wi-Fi,Luohe,Plug
+Google Nest Indoor Cam,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Nest,Plug
+Netatmo Welcome,Smart Security IP Camera,Class 2,Wi-Fi,Amazon Alexa; IFTTT; Netatmo,Plug
+Simcam AI01,Smart Security IP Camera,Class 2,Wi-Fi,Simcam,Plug
+Amazon Smart Plug,Smart Energy Management Device,Class 2,,Amazon Alexa,Plug
+GoSund WP9 PowerStrip,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; GoSund,Plug
+Atomi Coffe Maker,Smart Appliance,Unconstrained,Wi-Fi,Google Home; Amazon Alexa; Atomi,Plug
+GoSund WP2,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; GoSund,Plug
+GoSund W3,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; GoSund,Plug
+Teckin SP10,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; Smart Life,Plug
+Tapo C200,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Tapo,Plug
+Yutron YSP-10A,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; Yutron,Plug
+Wemo Mini Smart Plug,Smart Energy Management Device,Class 2,Wi-Fi,Google Home; Amazon Alexa; WeMo,Plug
+Lepro LampUX RGB,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Lepro,Plug
+Netatmo Weather Station,Smart Appliance,Unconstrained,Wi-Fi,Google Home; Amazon Alexa; IFTTT; Apple HomeKit; Netatmo,Plug
+Teckin Light Strip,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Smart Life,Plug
+GoSund Bulb,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; GoSund,Plug
+Lumiman Bulb,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Lumiman,Plug
+iRobot Roomba i3+,Smart Appliance,Unconstrained,Wi-Fi,Google Home; Amazon Alexa; iRobot HOME,Battery
+SMART Board 6075S,Smart Appliance,Unconstrained,Wi-Fi; Ethernet,,Plug
+LG WebOs OLED GXPUA,Smart Appliance,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Plug
+Smart Cocoon Vent Fan,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Smart Cocoon,Plug
+HeimVision Wake-Up Light,Smart Bulb,Class 2,Wi-Fi,HeimVision,Plug
+Govee Smart Humidifier,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Govee Home,Plug
+Levoit Air Purifier,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Levoit,Plug
+Yi Indoor Camera,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Yi,Plug
