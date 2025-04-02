@@ -93,46 +93,54 @@ def update_home_impact(home):
 def update_device_vuln():
     now = timezone.now()
     devices = Device.objects.all()
-    
+
     for device in devices:
         if now >= device.lastUpdate + timedelta(seconds=device.updateFreq):
             vulns = vulns_search(device.model)
 
             for vul in vulns:
-                vul_data = vul.split("___")
-                identifier = vul_data[0]
+                try:
+                    vul_data = vul.split("___")
+                    if len(vul_data) < 9:
+                        continue
 
-                existing_vulns = Vulnerability.objects.filter(identifier=identifier, device=device)
-                if existing_vulns.exists():
-                    for vuln in existing_vulns:
-                        vuln.description = vul_data[1]
-                        vuln.baseSeverity = vul_data[2]
-                        vuln.baseScore = float(vul_data[4])
-                        vuln.impactScore = vul_data[6]
-                        vuln.exploitabilityScore = vul_data[5]
-                        vuln.vector = vul_data[8]
-                        vuln.version = vul_data[3]
-                        vuln.save()
+                    identifier = vul_data[0]
+                    base_score = float(vul_data[4])
+                    version_value = float(vul_data[3])
 
-                        vuln.cwes.clear()
+                    existing_vulns = Vulnerability.objects.filter(identifier=identifier, device=device)
+                    if existing_vulns.exists():
+                        for vuln in existing_vulns:
+                            vuln.description = vul_data[1]
+                            vuln.baseSeverity = vul_data[2]
+                            vuln.baseScore = base_score
+                            vuln.impactScore = vul_data[6]
+                            vuln.exploitabilityScore = vul_data[5]
+                            vuln.vector = vul_data[8]
+                            vuln.version = version_value
+                            vuln.save()
+
+                            vuln.cwes.clear()
+                            for cwe_identifier in vul_data[7].split(','):
+                                cwe_obj, _ = CWE.objects.get_or_create(identifier=cwe_identifier.strip())
+                                vuln.cwes.add(cwe_obj)
+                    else:
+                        new_vuln = Vulnerability.objects.create(
+                            identifier=identifier,
+                            device=device,
+                            description=vul_data[1],
+                            baseSeverity=vul_data[2],
+                            baseScore=base_score,
+                            impactScore=vul_data[6],
+                            exploitabilityScore=vul_data[5],
+                            vector=vul_data[8],
+                            version=version_value
+                        )
                         for cwe_identifier in vul_data[7].split(','):
                             cwe_obj, _ = CWE.objects.get_or_create(identifier=cwe_identifier.strip())
-                            vuln.cwes.add(cwe_obj)
-                else:
-                    new_vuln = Vulnerability.objects.create(
-                        identifier=identifier,
-                        device=device,
-                        description=vul_data[1],
-                        baseSeverity=vul_data[2],
-                        baseScore=float(vul_data[4]),
-                        impactScore=vul_data[6],
-                        exploitabilityScore=vul_data[5],
-                        vector=vul_data[8],
-                        version=vul_data[3]
-                    )
-                    for cwe_identifier in vul_data[7].split(','):
-                        cwe_obj, _ = CWE.objects.get_or_create(identifier=cwe_identifier.strip())
-                        new_vuln.cwes.add(cwe_obj)
+                            new_vuln.cwes.add(cwe_obj)
+                except Exception as e:
+                    continue
 
             update_device_impact(device)
             update_home_impact(device.home)

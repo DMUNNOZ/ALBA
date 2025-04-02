@@ -9,24 +9,29 @@ def scan(sender, instance, created, **kwargs):
         created_vulnerabilities = []
         vulns = vulns_search(instance.model)
         for vul in vulns:
-            vul = str(vul).split("___")
-            print(vul)
-            vulnerability = Vulnerability.objects.create(
-                identifier=vul[0],
-                description=vul[1],
-                baseSeverity=vul[2],
-                baseScore=float(vul[4]),
-                impactScore=vul[6],
-                exploitabilityScore=vul[5],
-                vector=vul[8],
-                version=vul[3],
-                device=instance
-            )
-            for cwe_identifier in vul[7].split(','):
-                cwe_obj, _ = CWE.objects.get_or_create(identifier=cwe_identifier.strip())
-                vulnerability.cwes.add(cwe_obj)
+            try:
+                vul = str(vul).split("___")
+                if len(vul) < 9:
+                    continue
 
-            created_vulnerabilities.append(vulnerability)
+                vulnerability = Vulnerability.objects.create(
+                    identifier=vul[0],
+                    description=vul[1],
+                    baseSeverity=vul[2],
+                    baseScore=float(vul[4]),
+                    impactScore=vul[6],
+                    exploitabilityScore=vul[5],
+                    vector=vul[8],
+                    version=float(vul[3]),
+                    device=instance
+                )
+                for cwe_identifier in vul[7].split(','):
+                    cwe_obj, _ = CWE.objects.get_or_create(identifier=cwe_identifier.strip())
+                    vulnerability.cwes.add(cwe_obj)
+
+                created_vulnerabilities.append(vulnerability)
+            except Exception as e:
+                continue
 
         # -------------------------- IMPACT -------------------------------------
         weighted_sum = 0.0
