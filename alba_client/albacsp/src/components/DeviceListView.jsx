@@ -94,6 +94,16 @@ const DeviceListView = () => {
               <strong>Vulnerabilities:</strong>
               <span>{device.vulnerabilities.map(v => v.identifier).join(', ') || 'None'}</span>
             </div>
+            <div className="device-field">
+            <strong>CWEs:</strong>
+            <span>
+              {
+                device.vulnerabilities.reduce((acc, vuln) => {
+                  return acc.concat(vuln.cwes ? vuln.cwes.map(cwe => cwe.identifier) : []);
+                }, []).join(', ') || 'None'
+              }
+            </span>
+          </div>
           </div>
         ))}
       </div>
