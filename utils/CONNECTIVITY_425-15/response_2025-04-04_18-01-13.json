@@ -1,0 +1,263 @@
+{
+    "properties": {
+        "connectivity": [
+            "Wi-Fi",
+            "ZigBee",
+            "Z-Wave",
+            "Bluetooth"
+        ]
+    },
+    "devices": [
+        {
+            "model": "Philips Hue Motion Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Philips Hue"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Fibaro Flood Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Fibaro Home Center"
+            ],
+            "connectivity": [
+                "Z-Wave"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Elgato Eve Room",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Eve"
+            ],
+            "connectivity": [
+                "Bluetooth"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Wyze Sense",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "IFTTT",
+                "Wyze"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 9.25
+        },
+        {
+            "model": "Everspring Flood Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings",
+                "Vera",
+                "Home Assistant"
+            ],
+            "connectivity": [
+                "Z-Wave"
+            ],
+            "sustainability": 7.25
+        },
+        {
+            "model": "Dome Home Automation Water Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings",
+                "Vera",
+                "Home Assistant"
+            ],
+            "connectivity": [
+                "Z-Wave"
+            ],
+            "sustainability": 7.25
+        },
+        {
+            "model": "Centralite Micro Door Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings",
+                "Hubitat Elevation",
+                "Wink"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 7.25
+        },
+        {
+            "model": "LeakSmart Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings",
+                "Hubitat Elevation",
+                "Wink",
+                "LeakSmart"
+            ],
+            "connectivity": [
+                "ZigBee"
+            ],
+            "sustainability": 7.25
+        },
+        {
+            "model": "Ecobee Room Sensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Amazon Alexa",
+                "Ecobee"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 7.25
+        },
+        {
+            "model": "Honeywell Lyric W1",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Honeywell Home"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 3.25
+        },
+        {
+            "model": "Netatmo Weather Station",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Netatmo"
+            ],
+            "connectivity": [
+                "Wi-Fi"
+            ],
+            "sustainability": 7.25
+        },
+        {
+            "model": "Aeotec TriSensor",
+            "type": "Low-End Sensor",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Aeotec"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Z-Wave"
+            ],
+            "sustainability": 7.25
+        },
+        {
+            "model": "Fibaro Wall Plug",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings",
+                "Google Home",
+                "Amazon Alexa",
+                "IFTTT",
+                "Fibaro Home Center"
+            ],
+            "connectivity": [
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Sonoff Smart Plug",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "IFTTT",
+                "eWeLink"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Sengled Smart Plug",
+            "type": "Smart Energy Management Device",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "Google Home",
+                "Amazon Alexa",
+                "Sengled"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "Z-Wave",
+                "ZigBee"
+            ],
+            "sustainability": 2.75
+        }
+    ]
+}

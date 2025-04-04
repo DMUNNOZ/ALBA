@@ -1,0 +1,83 @@
+{
+    "properties": {
+        "usability": [
+            "SmartThings"
+        ],
+        "connectivity": [
+            "Wi-Fi",
+            "ZigBee",
+            "Ethernet"
+        ],
+        "average_sustainability": 3.55
+    },
+    "devices": [
+        {
+            "model": "Allied Telesis AT-GS950",
+            "type": "Switch",
+            "security": {
+                "impact": 7.5,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Samsung SHP-A30",
+            "type": "Smart Lock",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [
+                "SmartThings"
+            ],
+            "connectivity": [
+                "Wi-Fi",
+                "ZigBee"
+            ],
+            "sustainability": 6.75
+        },
+        {
+            "model": "Cisco Catalyst 3850 24",
+            "type": "Switch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Gigamon G TAP",
+            "type": "Switch",
+            "security": {
+                "impact": 0.0,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        },
+        {
+            "model": "Netgear GS308",
+            "type": "Switch",
+            "security": {
+                "impact": 8.377294685990337,
+                "cwe_set": []
+            },
+            "usability": [],
+            "connectivity": [
+                "Ethernet"
+            ],
+            "sustainability": 2.75
+        }
+    ]
+}

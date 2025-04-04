@@ -8,7 +8,7 @@ from openpyxl import Workbook, load_workbook
 import csv
 
 
-dataset_n=325
+dataset_n=425
 
 
 
@@ -27,30 +27,31 @@ def req_multi(n_dev):
     ]
 
     max_limits = {
-        "switch": 11,
-        "router": 8,
-        "bridge": 13,
-        "repeater": 12,
-        "modern": 9,
-        "gateway": 11,
-        "firewall": 11,
-        "low_end_sensor": 9,
-        "high_end_sensor": 24,
-        "bulb": 18,
-        "energy_management": 22,
-        "lock": 12,
-        "security_alarm": 13,
-        "security_ip_camera": 28,
-        "appliance": 22,
-        "tv": 14,
-        "smartphone": 11,
-        "tablet": 9,
-        "pc": 12,
-        "smartwatch": 10,
-        "security_hub": 13,
-        "assistant_hub": 20,
-        "nas": 13
+        "switch": 18,
+        "router": 16,
+        "bridge": 16,
+        "repeater": 16,
+        "modern": 15,
+        "gateway": 15,
+        "firewall": 15,
+        "low_end_sensor": 15,
+        "high_end_sensor": 28,
+        "bulb": 24,
+        "energy_management": 26,
+        "lock": 16,
+        "security_alarm": 17,
+        "security_ip_camera": 31,
+        "appliance": 24,
+        "tv": 19,
+        "smartphone": 15,
+        "tablet": 15,
+        "pc": 16,
+        "smartwatch": 15,
+        "security_hub": 16,
+        "assistant_hub": 22,
+        "nas": 15
     }
+
 
     total_max = sum(max_limits[device] for device in device_types)
     if number > total_max:

@@ -5,7 +5,7 @@ from multi_client import req_multi
 n = 100
 
 script_path = '/home/kali/Escritorio/ALBACSP2/ALBACSP/utils/client.py'
-n_devices = [5,10,15,20,25,35,50,75,100,125,150,175,200,225,250,275,300,325]
+n_devices = [5,10,15,20,25,35,50,75,100,125,150,175,200,225,250,275,300,325,350,375,400,425]
 time.sleep(5)
 for j in n_devices:
     for i in range(n):
