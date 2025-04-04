@@ -12,7 +12,7 @@ from collections import defaultdict
 from django.views.decorators.csrf import csrf_exempt
 import re
 import sys
-sys.setrecursionlimit(30000)
+sys.setrecursionlimit(50000)
 
 class HomeView(viewsets.ModelViewSet):
     serializer_class = HomeSerializer
@@ -1233,123 +1233,129 @@ class ConfigView(APIView):
              model.Add(av_dev_var == 1)
 
        # -------------------------------------------- IMPACT ----------------------------------------------
+        obj_func_imp = 0
+        obj_func_cwe = 0
+        cwes_per_device = {}
+        if user_security_v != 0:
+            impact_per_device = []
+            for device in devices:
+                impact_per_device.append((device, int(round(device.impact))))
+            impact_values = [impact for _, impact in impact_per_device]
+            min_impact = min(impact_values)
+            max_impact = max(impact_values)
+            impact_per_device_norm = []
+            diff_impact = max_impact - min_impact
+            for device, impact in impact_per_device:
+                normalized_impact = (impact - min_impact) / diff_impact
+                rounded_scaled_impact = round(normalized_impact * 1000)
+                impact_per_device_norm.append((device, rounded_scaled_impact))
+            impact_scores = []
+            for i, device in enumerate(devices): 
+                impact_var = model.NewIntVar(0, sum(score[1] for score in impact_per_device_norm), f'impact_{i}')  ######### VARS
+                impact_scores.append(impact_var)
+            impact_score_expr = sum(list(device_vars.values())[i] * impact_per_device_norm[i][1] for i in range(len(devices)))
+            model.Add(impact_score_expr == sum(impact_scores))
+            obj_func_imp=sum(impact_scores)
 
-        impact_per_device = []
-        for device in devices:
-            impact_per_device.append((device, int(round(device.impact))))
-        impact_values = [impact for _, impact in impact_per_device]
-        min_impact = min(impact_values)
-        max_impact = max(impact_values)
-        impact_per_device_norm = []
-        diff_impact = max_impact - min_impact
-        for device, impact in impact_per_device:
-            normalized_impact = (impact - min_impact) / diff_impact
-            rounded_scaled_impact = round(normalized_impact * 1000)
-            impact_per_device_norm.append((device, rounded_scaled_impact))
-        impact_scores = []
-        for i, device in enumerate(devices): 
-            impact_var = model.NewIntVar(0, sum(score[1] for score in impact_per_device_norm), f'impact_{i}')  ######### VARS
-            impact_scores.append(impact_var)
-        impact_score_expr = sum(list(device_vars.values())[i] * impact_per_device_norm[i][1] for i in range(len(devices)))
-        model.Add(impact_score_expr == sum(impact_scores))
-        obj_func_imp=sum(impact_scores)
+            # ---------------------------------------------- CWE ------------------------------------------------
+
+            cwes = CWE.objects.all()
+            cwe_vars_dict = {}
+            for cwe in cwes:
+                if bool(re.search(r'\d', cwe.identifier)):
+                    cwe_var_id = f'cwe_{str(cwe.identifier).split("-")[1]}'
+                    cwe_var = model.NewBoolVar(cwe_var_id)
+                    cwe_vars_dict[cwe.identifier] = cwe_var
+            cwes_per_device_vars = {}
+            vulns = Vulnerability.objects.all()
+            for device in devices:
+                cwes_ids_var = []  
+                cwes_ids = set()   
+                device_vulns = vulns.filter(device=device)
+                for dev_vuln in device_vulns:
+                    cwes_qs = dev_vuln.cwes.all()
+                    cwes_id = [cwe.identifier for cwe in cwes_qs]
+                    for id in cwes_id:
+                        if bool(re.search(r'\d', id)):
+                            cwes_ids_var.append(cwe_vars_dict[id])
+                            cwes_ids.add(id)
+                cwes_per_device_vars[device] = cwes_ids_var
+                cwes_per_device[device] = cwes_ids
+            for dev in devices:
+                dev_cwes_v = cwes_per_device_vars[dev]
+                if dev_cwes_v:
+                    model.AddBoolAnd(dev_cwes_v).OnlyEnforceIf(device_vars[dev])
+            norm_cwe = (1 / 938) 
+            factor_cwe = 1000
+            obj_func_cwe = norm_cwe * factor_cwe * sum(cwe_vars_dict.values())
+
 
         # ------------------------------------------ CONNECTIVITY -------------------------------------------
-
-        connectivity_per_device = []
-        for device in devices:
-            connectivity_per_device.append((device, (len(device.connectivities.all()))))
-        connectivity_values = [connectivity for _, connectivity in connectivity_per_device]
-        min_connectivity = min(connectivity_values)
-        max_connectivity = max(connectivity_values)
-        connectivity_per_device_norm = []
-        diff_connectivity = max_connectivity - min_connectivity
-        for device, connectivity in connectivity_per_device:
-            normalized_connectivity = (connectivity - min_connectivity) / diff_connectivity
-            rounded_scaled_connectivity = round(normalized_connectivity * 1000)
-            connectivity_per_device_norm.append((device, rounded_scaled_connectivity))
-        connectivity_vars = []
-        for i, device in enumerate(devices):
-            connectivity_var = model.NewIntVar(0, sum(n_conn[1] for n_conn in connectivity_per_device_norm), f'n_connectivity_{i}')    ######### VARS
-            connectivity_vars.append(connectivity_var)
-        connectivity_expr = sum(list(device_vars.values())[i] * connectivity_per_device_norm[i][1] for i in range(len(devices)))
-        model.Add(connectivity_expr == (sum(connectivity_vars)))
-        obj_func_conn=sum(connectivity_vars)*-1  
+        obj_func_conn = 0
+        if user_connectivity_v != 0:
+            connectivity_per_device = []
+            for device in devices:
+                connectivity_per_device.append((device, (len(device.connectivities.all()))))
+            connectivity_values = [connectivity for _, connectivity in connectivity_per_device]
+            min_connectivity = min(connectivity_values)
+            max_connectivity = max(connectivity_values)
+            connectivity_per_device_norm = []
+            diff_connectivity = max_connectivity - min_connectivity
+            for device, connectivity in connectivity_per_device:
+                normalized_connectivity = (connectivity - min_connectivity) / diff_connectivity
+                rounded_scaled_connectivity = round(normalized_connectivity * 1000)
+                connectivity_per_device_norm.append((device, rounded_scaled_connectivity))
+            connectivity_vars = []
+            for i, device in enumerate(devices):
+                connectivity_var = model.NewIntVar(0, sum(n_conn[1] for n_conn in connectivity_per_device_norm), f'n_connectivity_{i}')    ######### VARS
+                connectivity_vars.append(connectivity_var)
+            connectivity_expr = sum(list(device_vars.values())[i] * connectivity_per_device_norm[i][1] for i in range(len(devices)))
+            model.Add(connectivity_expr == (sum(connectivity_vars)))
+            obj_func_conn=sum(connectivity_vars)*-1  
 
         # ----------------------------------------- SUSTAINABILITY ------------------------------------------
-
-        sustainability_per_device = []
-        for device in devices:
-            sustainability_per_device.append((device, int(round(device.sustainability))))
-        sustainability_values = [sustainability for _, sustainability in sustainability_per_device]
-        min_sustainability = min(sustainability_values)
-        max_sustainability = max(sustainability_values)
-        sustainability_per_device_norm = []
-        diff_sustainability = max_sustainability - min_sustainability
-        for device, sustainability in sustainability_per_device:
-            normalized_sustainability = (sustainability - min_sustainability) / diff_sustainability
-            scaled_sustainability = round(normalized_sustainability * 1000)
-            sustainability_per_device_norm.append((device, scaled_sustainability))
-        sustainability_scores = []
-        for i, device in enumerate(devices):
-            sus_var = model.NewIntVar(0, sum(score[1] for score in sustainability_per_device_norm), f'sustainability_{i}')
-            sustainability_scores.append(sus_var)
-        sus_score_expr = sum(list(device_vars.values())[i] * sustainability_per_device_norm[i][1] for i in range(len(devices)))
-        model.Add(sus_score_expr == sum(sustainability_scores))
-        obj_func_sus=sum(sustainability_scores)*-1
+        obj_func_sus = 0
+        if user_sustainability_v != 0:
+            sustainability_per_device = []
+            for device in devices:
+                sustainability_per_device.append((device, int(round(device.sustainability))))
+            sustainability_values = [sustainability for _, sustainability in sustainability_per_device]
+            min_sustainability = min(sustainability_values)
+            max_sustainability = max(sustainability_values)
+            sustainability_per_device_norm = []
+            diff_sustainability = max_sustainability - min_sustainability
+            for device, sustainability in sustainability_per_device:
+                normalized_sustainability = (sustainability - min_sustainability) / diff_sustainability
+                scaled_sustainability = round(normalized_sustainability * 1000)
+                sustainability_per_device_norm.append((device, scaled_sustainability))
+            sustainability_scores = []
+            for i, device in enumerate(devices):
+                sus_var = model.NewIntVar(0, sum(score[1] for score in sustainability_per_device_norm), f'sustainability_{i}')
+                sustainability_scores.append(sus_var)
+            sus_score_expr = sum(list(device_vars.values())[i] * sustainability_per_device_norm[i][1] for i in range(len(devices)))
+            model.Add(sus_score_expr == sum(sustainability_scores))
+            obj_func_sus=sum(sustainability_scores)*-1
 
         # ---------------------------------------------- APP ------------------------------------------------
-
-        apps = App.objects.all()
-        app_vars_dict = {}
-        for app in apps:
-            app_var_id = f'app_{app.id}'
-            app_var = model.NewBoolVar(app_var_id)
-            app_vars_dict[app.name] = app_var
-        apps_per_device_vars = {}
-        for device in devices:
-            app_names = [app_vars_dict[app.name] for app in device.apps.all()]
-            apps_per_device_vars[device] = app_names
-        for dev in devices:
-            dev_apps = apps_per_device_vars[dev]
-            if dev_apps:
-                model.AddBoolOr(dev_apps).OnlyEnforceIf(device_vars[dev])
-        norm_app = (1 / apps.count())  
-        factor_app = 1000
-        obj_func_app = norm_app * factor_app * sum(app_vars_dict.values())
-
-        # ---------------------------------------------- CWE ------------------------------------------------
-
-        cwes = CWE.objects.all()
-        cwe_vars_dict = {}
-        for cwe in cwes:
-            if bool(re.search(r'\d', cwe.identifier)):
-                cwe_var_id = f'cwe_{str(cwe.identifier).split("-")[1]}'
-                cwe_var = model.NewBoolVar(cwe_var_id)
-                cwe_vars_dict[cwe.identifier] = cwe_var
-        cwes_per_device_vars = {}
-        cwes_per_device = {}
-        vulns = Vulnerability.objects.all()
-        for device in devices:
-            cwes_ids_var = []  
-            cwes_ids = set()   
-            device_vulns = vulns.filter(device=device)
-            for dev_vuln in device_vulns:
-                cwes_qs = dev_vuln.cwes.all()
-                cwes_id = [cwe.identifier for cwe in cwes_qs]
-                for id in cwes_id:
-                    if bool(re.search(r'\d', id)):
-                        cwes_ids_var.append(cwe_vars_dict[id])
-                        cwes_ids.add(id)
-            cwes_per_device_vars[device] = cwes_ids_var
-            cwes_per_device[device] = cwes_ids
-        for dev in devices:
-            dev_cwes_v = cwes_per_device_vars[dev]
-            if dev_cwes_v:
-                model.AddBoolAnd(dev_cwes_v).OnlyEnforceIf(device_vars[dev])
-        norm_cwe = (1 / 938) 
-        factor_cwe = 1000
-        obj_func_cwe = norm_cwe * factor_cwe * sum(cwe_vars_dict.values())
+        obj_func_app = 0
+        if user_usability_v != 0:
+            apps = App.objects.all()
+            app_vars_dict = {}
+            for app in apps:
+                app_var_id = f'app_{app.id}'
+                app_var = model.NewBoolVar(app_var_id)
+                app_vars_dict[app.name] = app_var
+            apps_per_device_vars = {}
+            for device in devices:
+                app_names = [app_vars_dict[app.name] for app in device.apps.all()]
+                apps_per_device_vars[device] = app_names
+            for dev in devices:
+                dev_apps = apps_per_device_vars[dev]
+                if dev_apps:
+                    model.AddBoolOr(dev_apps).OnlyEnforceIf(device_vars[dev])
+            norm_app = (1 / apps.count())  
+            factor_app = 1000
+            obj_func_app = norm_app * factor_app * sum(app_vars_dict.values())
 
         # --------------------------------------------------------------------------------------------
 
@@ -1359,6 +1365,8 @@ class ConfigView(APIView):
                      user_sustainability_v * obj_func_sus + 
                      user_usability_v * obj_func_app)
         
+        print('Obj Func (minimize):'+ str(total_obj))
+        
         model.Minimize(total_obj)       
         solver = cp_model.CpSolver()
         status = solver.Solve(model)
@@ -1366,41 +1374,45 @@ class ConfigView(APIView):
         # --------------------------------------------------------------------------------------------
 
         if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
-
-            vars_to_app_dict = {v.Name(): k for k, v in app_vars_dict.items()}
-            vars_to_cwe_dict = {v.Name(): k for k, v in cwe_vars_dict.items()}
-            total_impact = []
-            total_sustainability = []
-            total_connectivity = set()
-            total_app = []
-            total_cwe = []
-            for device, device_var in device_vars.items():
-                if solver.Value(device_var) == 1:
-                    total_impact.append(device.impact)
-                    total_sustainability.append(device.sustainability)
-                    connectivities = list(device.connectivities.all().values_list('technology', flat=True))
-                    for con in connectivities:
-                        total_connectivity.add(con)
-
-            for app_var in app_vars_dict.values():
-                if solver.Value(app_var) == 1:
-                    total_app.append(vars_to_app_dict[app_var.Name()])
-
-            for cwe_var in cwe_vars_dict.values():
-                if solver.Value(cwe_var) == 1:
-                    total_cwe.append(vars_to_cwe_dict[cwe_var.Name()])
-
             properties = {}
             if user_security_v != 0:
+                total_impact = []
+                total_cwe = []
+                vars_to_cwe_dict = {v.Name(): k for k, v in cwe_vars_dict.items()}
+
+                for cwe_var in cwe_vars_dict.values():
+                    if solver.Value(cwe_var) == 1:
+                        total_cwe.append(vars_to_cwe_dict[cwe_var.Name()])
+
+                for device, device_var in device_vars.items():
+                    if solver.Value(device_var) == 1:
+                        total_impact.append(device.impact)
+
                 properties["security"] = {
                     "average_impact": sum(total_impact) / len(total_impact),
                     "cwe_set": total_cwe
                 }
             if user_usability_v != 0:
+                total_app = []
+                vars_to_app_dict = {v.Name(): k for k, v in app_vars_dict.items()}
+                for app_var in app_vars_dict.values():
+                    if solver.Value(app_var) == 1:
+                        total_app.append(vars_to_app_dict[app_var.Name()])
                 properties["usability"] = total_app
             if user_connectivity_v != 0:
+                total_connectivity = set()
+                for device, device_var in device_vars.items():
+                    if solver.Value(device_var) == 1:
+                        connectivities = list(device.connectivities.all().values_list('technology', flat=True))
+                        for con in connectivities:
+                            total_connectivity.add(con)
                 properties["connectivity"] = list(total_connectivity)
+
             if user_sustainability_v != 0:
+                total_sustainability = []
+                for device, device_var in device_vars.items():
+                    if solver.Value(device_var) == 1:
+                        total_sustainability.append(device.sustainability)
                 properties["average_sustainability"] = sum(total_sustainability) / len(total_sustainability)
 
             solution = {
@@ -1417,15 +1429,21 @@ class ConfigView(APIView):
                         "type": device.type,
                         "security": {
                             "impact": device.impact,
-                            "cwe_set": list(cwes_per_device[device])
+                            "cwe_set": []
                         },
                         "usability": list(
                             Device.objects.get(id=device.id).apps.all().values_list('name', flat=True)
                         ),
                         "connectivity": connectivities,
                         "sustainability": device.sustainability,
-
                     }
+
+                    # Intentar obtener la lista de CWEs
+                    try:
+                        device_info["security"]["cwe_set"] = list(cwes_per_device[device])
+                    except KeyError:
+                        device_info["security"]["cwe_set"] = []
+
                     solution["devices"].append(device_info)
 
             return JsonResponse(solution)

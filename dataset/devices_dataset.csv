@@ -395,6 +395,7 @@ Rbcior Indoor Camera,Smart Security IP Camera,Class 2,Wi-Fi,Amazon Alexa,Plug
 Harman Kardon Allure,Smart Appliance,Unconstrained,Wi-Fi; Bluetooth,Google Home; Amazon Alexa; Harman Kardon,Plug
 Sonos One,Smart Appliance,Unconstrained,Wi-Fi; Ethernet,Google Home; Amazon Alexa; Sonos,Plug
 Yi Outdoor Camera,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Yi,Plug
+Samsung 55S95D,Smart TV,Unconstrained,Wi-Fi; Ethernet; Bluetooth,,Plug
 Amcrest 2K Camera,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Amcrest View,Plug
 Luohe Hidden Camera,Smart Security IP Camera,Class 2,Wi-Fi,Luohe,Plug
 Google Nest Indoor Cam,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Nest,Plug
@@ -415,10 +416,11 @@ Teckin Light Strip,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Smart Lif
 GoSund Bulb,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; GoSund,Plug
 Lumiman Bulb,Smart Bulb,Class 2,Wi-Fi,Google Home; Amazon Alexa; Lumiman,Plug
 iRobot Roomba i3+,Smart Appliance,Unconstrained,Wi-Fi,Google Home; Amazon Alexa; iRobot HOME,Battery
-SMART Board 6075S,Smart Appliance,Unconstrained,Wi-Fi; Ethernet,,Plug
-LG WebOs OLED GXPUA,Smart Appliance,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Plug
+SMART Board 6075S,Smart TV,Unconstrained,Wi-Fi; Ethernet,,Plug
+LG WebOs OLED GXPUA,Smart TV,Unconstrained,Wi-Fi; Bluetooth; Ethernet,,Plug
 Smart Cocoon Vent Fan,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Smart Cocoon,Plug
 HeimVision Wake-Up Light,Smart Bulb,Class 2,Wi-Fi,HeimVision,Plug
 Govee Smart Humidifier,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Govee Home,Plug
 Levoit Air Purifier,Smart Appliance,Class 2,Wi-Fi,Google Home; Amazon Alexa; Levoit,Plug
 Yi Indoor Camera,Smart Security IP Camera,Class 2,Wi-Fi,Google Home; Amazon Alexa; Yi,Plug
+LG OLED55C44LA,Smart TV,Unconstrained,Wi-Fi; Ethernet; Bluetooth,,Plug
