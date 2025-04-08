@@ -44,6 +44,7 @@ class Device(models.Model):
     sustainability=models.FloatField(blank=True, null=True)
     apps = models.ManyToManyField(App, blank=True)
     power_supplies = models.ManyToManyField(Power, blank=True)
+    firmware=models.TextField(blank=True, null=True)
     lastUpdate = models.DateTimeField(default=timezone.now)
     updateFreq = models.BigIntegerField(default=86400) # 1 day
     home = models.ForeignKey(Home, on_delete=models.CASCADE, related_name="devices",blank=True, null=True)
