@@ -1,7 +1,6 @@
-# ALBA - Assistant
+# ALBA-Assistant
 ## Overview
-Alba-Assistant is a decision support tool designed to generate secure and sustainable smart home configurations. It leverages a multi‐objective optimization approach that balances security, connectivity, sustainability, and usability based on user defined requirements. Using constraint programming techniques alongside up-to-date device data and vulnerability information, Alba Assistant computes the best combination of smart devices to meet the user’s specific needs while ensuring ease of integration, enhanced safety and energy efficiency.
-
+Alba-Assistant is a decision support tool designed to generate secure and sustainable smart home configurations. It employs a multi-objective optimization approach that balances factors such as security, connectivity, sustainability, and usability according to user-defined requirements. By leveraging constraint programming techniques alongside the latest device data and current vulnerability information, Alba-Assistant identifies the optimal combination of smart devices to satisfy the specific needs of each user. 
 ## Installation
 1. A local copy of the Alba-Assitant repository is obtained:
    ```
